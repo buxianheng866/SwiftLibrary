@@ -9,17 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    lazy var xibView: XibNormalView = {
+        guard let xib = XibNormalView.newInstance() else {
+            return XibNormalView()
+        }
+        return xib
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        xibView.frame = CGRect(x: 0, y: 100, width: 300, height: 300)
+        
+        self.view.addSubview(xibView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func selectedAct(_ sender: Any) {
+        
+        LPPhotoHelper.open(.photoLibrary).showSelectedImage { (data) in
+            print("showshow")
+        }
     }
-
-
+    
 }
+
+
+
 
