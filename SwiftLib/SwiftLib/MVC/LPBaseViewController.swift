@@ -20,5 +20,9 @@ class LPBaseViewController: UIViewController {
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
+        
+        
+       
     }
+    
 }

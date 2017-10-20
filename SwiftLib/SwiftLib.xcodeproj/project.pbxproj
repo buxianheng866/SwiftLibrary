@@ -21,6 +21,13 @@
 		7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */; };
 		7DA70D221F9093E9001CEE27 /* LPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D211F9093E9001CEE27 /* LPBaseViewController.swift */; };
 		7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */; };
+		7DB86DAF1F999ED500402BA9 /* GenalNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DAE1F999ED500402BA9 /* GenalNotes.swift */; };
+		7DB86DB11F99A5AD00402BA9 /* LPFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */; };
+		7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */; };
+		7DB86DB51F99EA3300402BA9 /* LPDownloadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB86DB41F99EA3300402BA9 /* LPDownloadView.xib */; };
+		7DE2FBEE1F9889D60028506D /* HttpNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2FBED1F9889D60028506D /* HttpNet.swift */; };
+		7DE2FBF01F988A0B0028506D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2FBEF1F988A0B0028506D /* RequestManager.swift */; };
+		7DE2FBF21F988A410028506D /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2FBF11F988A410028506D /* DownloadManager.swift */; };
 		7DF434811F90BF83006D5698 /* XibNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF434801F90BF83006D5698 /* XibNormalView.swift */; };
 		7DF434851F90BFB2006D5698 /* XibNormalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF434841F90BFB2006D5698 /* XibNormalView.xib */; };
 /* End PBXBuildFile section */
@@ -45,6 +52,13 @@
 		7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPVerticalBtn.swift; sourceTree = "<group>"; };
 		7DA70D211F9093E9001CEE27 /* LPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPBaseViewController.swift; sourceTree = "<group>"; };
 		7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPPhotoHelper.swift; sourceTree = "<group>"; };
+		7DB86DAE1F999ED500402BA9 /* GenalNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenalNotes.swift; sourceTree = "<group>"; };
+		7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPFileManager.swift; sourceTree = "<group>"; };
+		7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPDownloadView.swift; sourceTree = "<group>"; };
+		7DB86DB41F99EA3300402BA9 /* LPDownloadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPDownloadView.xib; sourceTree = "<group>"; };
+		7DE2FBED1F9889D60028506D /* HttpNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpNet.swift; sourceTree = "<group>"; };
+		7DE2FBEF1F988A0B0028506D /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		7DE2FBF11F988A410028506D /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		7DF434801F90BF83006D5698 /* XibNormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibNormalView.swift; sourceTree = "<group>"; };
 		7DF434841F90BFB2006D5698 /* XibNormalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibNormalView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +107,7 @@
 			children = (
 				7D085C7F1F8F48C7006CA52C /* AppDelegate.swift */,
 				7D085C811F8F48C7006CA52C /* ViewController.swift */,
+				7DB86DAE1F999ED500402BA9 /* GenalNotes.swift */,
 				7D085CD51F8F6406006CA52C /* Third */,
 				7D085C941F8F507E006CA52C /* MVC */,
 				7D085C931F8F5038006CA52C /* Extendion */,
@@ -117,8 +132,9 @@
 		7D085C921F8F5032006CA52C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				7D085CD31F8F63E9006CA52C /* HttpRequest.swift */,
+				7DE2FBEC1F987CBF0028506D /* NetRequest */,
 				7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */,
+				7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -158,6 +174,19 @@
 				7D085CD81F8F6425006CA52C /* SwiftyJSON.swift */,
 			);
 			path = SwiftJson;
+			sourceTree = "<group>";
+		};
+		7DE2FBEC1F987CBF0028506D /* NetRequest */ = {
+			isa = PBXGroup;
+			children = (
+				7D085CD31F8F63E9006CA52C /* HttpRequest.swift */,
+				7DE2FBED1F9889D60028506D /* HttpNet.swift */,
+				7DE2FBEF1F988A0B0028506D /* RequestManager.swift */,
+				7DE2FBF11F988A410028506D /* DownloadManager.swift */,
+				7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */,
+				7DB86DB41F99EA3300402BA9 /* LPDownloadView.xib */,
+			);
+			path = NetRequest;
 			sourceTree = "<group>";
 		};
 		EB5A9DB143C789C088B1A324 /* Frameworks */ = {
@@ -231,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D085C8A1F8F48C7006CA52C /* LaunchScreen.storyboard in Resources */,
+				7DB86DB51F99EA3300402BA9 /* LPDownloadView.xib in Resources */,
 				7DF434851F90BFB2006D5698 /* XibNormalView.xib in Resources */,
 				7D085C871F8F48C7006CA52C /* Assets.xcassets in Resources */,
 				7D085C851F8F48C7006CA52C /* Main.storyboard in Resources */,
@@ -304,15 +334,21 @@
 			files = (
 				7DA70D221F9093E9001CEE27 /* LPBaseViewController.swift in Sources */,
 				7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */,
+				7DE2FBF01F988A0B0028506D /* RequestManager.swift in Sources */,
 				7D085CD21F8F61EB006CA52C /* Macros.swift in Sources */,
 				7D085CDD1F8F7605006CA52C /* String+Extension.swift in Sources */,
+				7DB86DB11F99A5AD00402BA9 /* LPFileManager.swift in Sources */,
 				7D085CD41F8F63E9006CA52C /* HttpRequest.swift in Sources */,
 				7D085C821F8F48C7006CA52C /* ViewController.swift in Sources */,
 				7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */,
 				7D085CDB1F8F7589006CA52C /* UIColor+Extension.swift in Sources */,
 				7D085CD91F8F6425006CA52C /* SwiftyJSON.swift in Sources */,
+				7DB86DAF1F999ED500402BA9 /* GenalNotes.swift in Sources */,
 				7D085C801F8F48C7006CA52C /* AppDelegate.swift in Sources */,
+				7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */,
 				7DF434811F90BF83006D5698 /* XibNormalView.swift in Sources */,
+				7DE2FBEE1F9889D60028506D /* HttpNet.swift in Sources */,
+				7DE2FBF21F988A410028506D /* DownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,8 +33,8 @@ func printLog<T>(_ message: T, file: String = #file, funcName: String = #functio
 
 let isPhoneX = UIScreen.main.currentMode?.size.height == 2436
 
-let mScreenW = UIScreen.main.bounds.height
-let mScreenH = UIScreen.main.bounds.width
+let mScreenH = UIScreen.main.bounds.height
+let mScreenW = UIScreen.main.bounds.width
 
 let kNavBarColor = UIColor.orange
 
