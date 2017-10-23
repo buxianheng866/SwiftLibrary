@@ -169,7 +169,7 @@ class DownloadTaskManager {
                 dataPlist[self.url!] = resData.resumeData
                 dataPlist.write(to: dataPath, atomically: true)
                 if self.cancelCompletion != nil { self.cancelCompletion!() }
-                completion(error as! Result<String>)
+                completion(Alamofire.Result.failure(error))
             }
         })
         

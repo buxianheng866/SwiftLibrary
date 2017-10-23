@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class LPDownloadView: UIView {
 
     @IBOutlet weak var prolab: UILabel!
@@ -21,12 +20,12 @@ class LPDownloadView: UIView {
         return nibView
     }
     
-    let downloadUrl = "http://120.25.226.186:32812/resources/videos/minion_12.mp4"
+    let vedioURL = "http://120.25.226.186:32812/resources/videos/minion_12.mp4"
 
     
     func updateUI() -> Void {
-        let status = downloadStatus(downloadUrl)
-        let progre = downloadPercent(downloadUrl)
+        let status = downloadStatus(vedioURL)
+        let progre = downloadPercent(vedioURL)
         leftBtn.setTitle(buttonStatus(status), for: .normal)
         proView.progress = Float(progre)
         prolab.text = "\((progre))"
@@ -49,15 +48,22 @@ class LPDownloadView: UIView {
     }
     
     @IBAction func downloadAction(_ sender: Any) {
-        let downStatus = downloadStatus(downloadUrl)
+        let downStatus = downloadStatus(vedioURL)
         switch downStatus {
         case .complete:
-            let fileUrl = downloadFilePath(downloadUrl)
+            let fileUrl = downloadFilePath(vedioURL)
             printLog("地址: \(fileUrl!)")
+            
+//            let fileURL = cacheDirectory().appendingPathComponent("\(downloadFolder)/minion_12.mp4")
+//            let playerController = AVPlayerViewController()
+//            let player = AVPlayer(url: fileURL)
+//            playerController.player = player
+//            self.present(playerController, animated: true, completion: nil)
+            
         case .downloading:
-            downloadCancel(downloadUrl)
+            downloadCancel(vedioURL)
         case .suspend:
-            download(downloadUrl).downloadProgress(progress: { [weak self] _ in
+            download(vedioURL).downloadProgress(progress: { [weak self] _ in
                 self?.updateUI()
             }).response(completion: { [weak self] data in
                 self?.updateUI()
@@ -71,7 +77,7 @@ class LPDownloadView: UIView {
     }
     
     @IBAction func deleteAction(_ sender: Any) {
-        downloadDelete(downloadUrl)
+        downloadDelete(vedioURL)
         self.updateUI()
     }
     

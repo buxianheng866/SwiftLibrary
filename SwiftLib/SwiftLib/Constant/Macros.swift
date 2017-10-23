@@ -25,7 +25,7 @@ enum newNumber: Int {
 func printLog<T>(_ message: T, file: String = #file, funcName: String = #function, lineNum: Int = #line) -> Void {
     #if DEBUG
 //        let fileN = (file as NSString).lastPathComponent
-        print("(line: \(lineNum))---\(message)")
+        print("(line: \(lineNum))->\(funcName)---\(message)")
     
     #endif
 }
