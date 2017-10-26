@@ -23,6 +23,7 @@
 		7D179DAB1FA02AA0008F4B97 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAA1FA02AA0008F4B97 /* libbz2.tbd */; };
 		7D179DAD1FA02AAB008F4B97 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAC1FA02AAB008F4B97 /* libz.tbd */; };
 		7D179DB11FA073EC008F4B97 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D179DB01FA073EC008F4B97 /* Date+Extension.swift */; };
+		7D24C01E1FA1CACF00D81359 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D24C01D1FA1CACE00D81359 /* IJKMediaFramework.framework */; };
 		7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D071FA082F2008C1F75 /* LPPlayerController.swift */; };
 		7D5C2D0A1FA082F2008C1F75 /* LPPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C2D081FA082F2008C1F75 /* LPPlayerController.xib */; };
 		7D5C2D0D1FA08437008C1F75 /* LiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D0B1FA08437008C1F75 /* LiveListCell.swift */; };
@@ -67,6 +68,9 @@
 		7D179DAA1FA02AA0008F4B97 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		7D179DAC1FA02AAB008F4B97 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7D179DB01FA073EC008F4B97 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		7D24C01D1FA1CACE00D81359 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		7D24C01F1FA1CAFE00D81359 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7D24C0201FA1CB0B00D81359 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		7D57C2561FA1BA78007D1DB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7D57C2571FA1BA9C007D1DB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7D57C2581FA1BAB0007D1DB5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -104,6 +108,7 @@
 				198C9C6F66B62E50C454F609 /* Pods_SwiftLib.framework in Frameworks */,
 				7D179DAD1FA02AAB008F4B97 /* libz.tbd in Frameworks */,
 				7D179DAB1FA02AA0008F4B97 /* libbz2.tbd in Frameworks */,
+				7D24C01E1FA1CACF00D81359 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +229,7 @@
 		7D085CD51F8F6406006CA52C /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				7D24C01D1FA1CACE00D81359 /* IJKMediaFramework.framework */,
 				7D085CD61F8F6425006CA52C /* SwiftJson */,
 			);
 			path = Third;
@@ -254,6 +260,8 @@
 		EB5A9DB143C789C088B1A324 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D24C0201FA1CB0B00D81359 /* MediaPlayer.framework */,
+				7D24C01F1FA1CAFE00D81359 /* CoreVideo.framework */,
 				7D57C25F1FA1BB21007D1DB5 /* MobileCoreServices.framework */,
 				7D57C25E1FA1BB1B007D1DB5 /* OpenGLES.framework */,
 				7D57C25D1FA1BB10007D1DB5 /* CoreMedia.framework */,
@@ -580,7 +588,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7V4WL43S4;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftLib/Third",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SwiftLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -602,7 +613,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7V4WL43S4;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftLib/Third",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SwiftLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

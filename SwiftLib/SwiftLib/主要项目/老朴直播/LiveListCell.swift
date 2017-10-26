@@ -13,11 +13,18 @@ class LiveListCell: UITableViewCell {
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var contentImage: UIImageView!
-    var model: LiveDetail? {
+    var model: ViewListModel? {
         didSet {
-            name.text = model?.nickname
-            header.kf.setImage(with: URL(string: (model?.avatar_small)!))
-            contentImage.kf.setImage(with: URL(string: (model?.room_src)!))
+            name.text = model?.creator.nick
+            
+            var  imageUrl = model?.creator.portrait
+            /* 处理特殊图片地址 */
+            if (imageUrl?.hasPrefix("http://img2.inke.cn/"))! == false {
+                imageUrl = "http://img.meelive.cn/" + (model?.creator.portrait)!
+            }
+            
+            header.kf.setImage(with: URL(string: imageUrl!))
+            contentImage.kf.setImage(with: URL(string: imageUrl!))
         }
     }
     

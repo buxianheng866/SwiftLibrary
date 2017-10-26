@@ -10,7 +10,7 @@
 #define Swift_OC_Bridging_h
 
 #import <LFLiveKit/LFLiveKit.h>
-//#import <IJKMediaFramework/IJKMediaFramework.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
 
 #endif /* Swift_OC_Bridging_h */
 

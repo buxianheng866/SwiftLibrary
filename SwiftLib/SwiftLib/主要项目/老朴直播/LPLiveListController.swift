@@ -8,10 +8,11 @@
 
 import UIKit
 import SnapKit
+typealias Model = ViewListModel
 class LPLiveListController: LPBaseViewController {
    
 //   self.view.safeAreaInsets
-    var dataSource = [LiveDetail]()
+    var dataSource = [ViewListModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,12 +41,12 @@ extension LPLiveListController {
         self.tableView.register( UINib(nibName: "LiveListCell", bundle: nil), forCellReuseIdentifier: "livelist")
     }
     
+    
+    
     func loadData() -> Void {
-        let time = Date.getStamp()
-        let netUrl = "http://capi.douyucdn.cn/api/v1/getHotCate?aid=ios&client_sys=ios&time=\(time)&auth=9fd94ae57a867116959ac60f0ae5d1fd"
-        let param = ["token": "74858010_11_e85e92db03e0d351_2_63009732"]
-        //        "http://hlsa.douyucdn.cn/live/%@rpALxOIgvq/playlist.m3u8?wsSecret=193bd3ce3254086baa30086c56b22176&wsTime=%@"
-        request(netUrl, method: .post, params: param).jsonResponse { [weak self] (result) in
+
+        let netUrl = "http://116.211.167.106/api/live/aggregation?uid=133825214&interest=1"
+        request(netUrl).jsonResponse { [weak self] result in
             switch result {
             case .success(let value):
                 self?.getJsonValue(JSON(value))
@@ -53,19 +54,21 @@ extension LPLiveListController {
                 printLog("error")
             }
         }
+        
+//        request(netUrl, method: .post, params: param).jsonResponse { [weak self] (result) in
+//            switch result {
+//            case .success(let value):
+//                self?.getJsonValue(JSON(value))
+//            default:
+//                printLog("error")
+//            }
+//        }
     }
     
     func getJsonValue(_ json: JSON) -> Void {
-        let data = json["data"]
-        for (_,b) in data {
-            for (_,d) in b["room_list"] {
-                let md = LiveDetail()
-                md.nickname = d["nickname"].string!
-                md.room_src = d["room_src"].string!
-                md.room_id = d["room_id"].string!
-                md.avatar_small = d["avatar_small"].string!
-                dataSource.append(md)
-            }
+        let data = json["lives"]
+        for item in data.array! {
+            dataSource.append(Model(dataDic: item))
         }
         self.tableView.reloadData()
     }
@@ -76,11 +79,24 @@ extension LPLiveListController {
         return dataSource.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 280
+        return 430
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "livelist", for: indexPath) as! LiveListCell
         cell.model = dataSource[indexPath.row]
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let lp = LPPlayerController()
+        lp.liveMD = dataSource[indexPath.row]
+        self.navigationController?.pushViewController(lp, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.8, 0.8, 1)
+        UIView.animate(withDuration: 0.8, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
+        }, completion: nil)
+    }
+    
 }
