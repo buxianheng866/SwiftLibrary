@@ -8,7 +8,12 @@
 import Foundation
 import UIKit
 class LPBaseViewController: UIViewController {
-    lazy var tableView: UITableView = UITableView()
+    lazy var tableView: UITableView = {
+        let table = UITableView()
+        table.delegate = self
+        table.dataSource = self
+        return table
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,9 +25,17 @@ class LPBaseViewController: UIViewController {
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
-        
-        
-       
+    }
+}
+
+extension LPBaseViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        return cell
+    }
+
 }

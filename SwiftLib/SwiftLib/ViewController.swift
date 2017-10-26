@@ -20,14 +20,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         xibView.frame = CGRect(x: 0, y: 50, width: mScreenW, height: 200)
-        self.view.addSubview(xibView)        
-    }
+        self.view.addSubview(xibView)
+        
     
-    @IBAction func selectedAct(_ sender: Any) {
-    
+        
+      
         
     }
     
+    @IBAction func selectedAct(_ sender: Any) {
+        
+  
+        
+    }
+    
+    @IBAction func goStartLive(_ sender: Any) {
+        let live = LPLiveStreamController()
+        self.navigationController?.pushViewController(live, animated: true)
+    }
+    
+    @IBAction func goSeeLive(_ sender: Any) {
+        let list = LPLiveListController()
+        self.navigationController?.pushViewController(list, animated: true)
+//        self.present(list, animated: true, completion: nil)
+    }
 }
 
 

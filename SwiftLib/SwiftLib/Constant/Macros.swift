@@ -41,6 +41,7 @@ let kNavBarColor = UIColor.orange
 
 let kApplication = UIApplication.shared
 
+let kSafeAreaInset = UIApplication.shared.delegate?.window??.safeAreaInsets ?? UIEdgeInsets.zero
 
 
 

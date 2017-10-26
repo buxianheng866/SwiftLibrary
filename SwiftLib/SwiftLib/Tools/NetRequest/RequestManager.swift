@@ -11,10 +11,11 @@ import UIKit
 import Alamofire
 
 class RequestManager {
+    static let `default` = RequestManager()
     fileprivate var dataRequest: DataRequest?
     fileprivate var completionClosure: (() -> ())?
-    
-     func request(_ url: String,
+ 
+    func request(_ url: String,
                  method: HTTPMethod = .get,
                  params: Parameters? = nil,
                  encoding: ParameterEncoding = URLEncoding.default,

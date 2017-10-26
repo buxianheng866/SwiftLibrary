@@ -17,9 +17,8 @@ func request(
     params: Parameters? = nil,
     encoding: ParameterEncoding = URLEncoding.default,
     headers: HTTPHeaders? = nil)
-    -> RequestManager
-{
-    return RequestManager().request(url, method: method, params: params, encoding: encoding, headers: headers)
+    -> RequestManager {
+    return RequestManager.default.request(url, method: method, params: params, encoding: encoding, headers: headers)
 }
 
 
@@ -30,8 +29,7 @@ func download(
     parameters: Parameters? = nil,
     encoding: ParameterEncoding = URLEncoding.default,
     headers: HTTPHeaders? = nil)
-    -> DownloadTaskManager
-{
+    -> DownloadTaskManager {
     return DownloadManager.default.download(url, method: method, parameters: parameters, encoding: encoding, headers: headers)
 }
 
