@@ -48,7 +48,6 @@ class RequestResponse {
     
     fileprivate var dataRequest: DataRequest
     fileprivate var completionClosure: (()->())?
-    
     fileprivate init(dataRequest: DataRequest, completionClosure: (()->())?) {
         self.dataRequest = dataRequest
         self.completionClosure = completionClosure

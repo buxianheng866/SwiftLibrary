@@ -44,6 +44,9 @@ let kApplication = UIApplication.shared
 let kSafeAreaInset = UIApplication.shared.delegate?.window??.safeAreaInsets ?? UIEdgeInsets.zero
 
 
+let kGenalTextFont: CGFloat = 15
+
+
 
 
 

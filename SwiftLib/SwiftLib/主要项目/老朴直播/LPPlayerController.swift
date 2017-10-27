@@ -7,18 +7,19 @@
 //
 
 import UIKit
-import IJKMediaFramework
+//import IJKMediaFramework
 class LPPlayerController: UIViewController {
 
     @IBOutlet weak var backBtn: UIButton!
     var liveMD: ViewListModel!
-    var ijkPlay: IJKFFMoviePlayerController!
+    
+//    var ijkPlay: IJKFFMoviePlayerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        setPlayer()
-        addMovieNotification()
+//        setPlayer()
+//        addMovieNotification()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -27,11 +28,11 @@ class LPPlayerController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isHidden = false
-        if ijkPlay != nil {
-            ijkPlay.pause()
-            ijkPlay.stop()
-            ijkPlay.shutdown()
-        }
+//        if ijkPlay != nil {
+//            ijkPlay.pause()
+//            ijkPlay.stop()
+//            ijkPlay.shutdown()
+//        }
        
     }
     @IBAction func backAction(_ sender: Any) {
@@ -46,7 +47,7 @@ class LPPlayerController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
+/*
 extension LPPlayerController {
     
     func setPlayer() -> () {
@@ -93,6 +94,7 @@ extension LPPlayerController {
     @objc func moviePlayBackStateDidChange(_ noti: Notification) -> Void {
         printLog("playback:\(ijkPlay.playbackRate)")
     }
-    
+ 
     
 }
+  */
