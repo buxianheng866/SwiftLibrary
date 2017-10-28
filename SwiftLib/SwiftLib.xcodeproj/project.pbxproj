@@ -30,6 +30,7 @@
 		7D5C2D101FA0848E008C1F75 /* LPLiveListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D0F1FA0848E008C1F75 /* LPLiveListController.swift */; };
 		7D5C2D121FA08DC4008C1F75 /* SnapkitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D111FA08DC4008C1F75 /* SnapkitDemo.swift */; };
 		7D6314001FA09A8E00084BB2 /* LivelistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6313FF1FA09A8E00084BB2 /* LivelistModel.swift */; };
+		7D8298EA1FA3345A00FDA8D9 /* SwiftDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8298E91FA3345A00FDA8D9 /* SwiftDateHelper.swift */; };
 		7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */; };
 		7DA70D221F9093E9001CEE27 /* LPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D211F9093E9001CEE27 /* LPBaseViewController.swift */; };
 		7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */; };
@@ -87,6 +88,7 @@
 		7D5C2D0F1FA0848E008C1F75 /* LPLiveListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPLiveListController.swift; sourceTree = "<group>"; };
 		7D5C2D111FA08DC4008C1F75 /* SnapkitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapkitDemo.swift; sourceTree = "<group>"; };
 		7D6313FF1FA09A8E00084BB2 /* LivelistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivelistModel.swift; sourceTree = "<group>"; };
+		7D8298E91FA3345A00FDA8D9 /* SwiftDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDateHelper.swift; sourceTree = "<group>"; };
 		7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPVerticalBtn.swift; sourceTree = "<group>"; };
 		7DA70D211F9093E9001CEE27 /* LPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPBaseViewController.swift; sourceTree = "<group>"; };
 		7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPPhotoHelper.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */,
 				7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */,
 				7D5C2D111FA08DC4008C1F75 /* SnapkitDemo.swift */,
+				7D8298E91FA3345A00FDA8D9 /* SwiftDateHelper.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LFLiveKit/LFLiveKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -428,6 +432,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLiveKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,6 +463,7 @@
 				7D085C801F8F48C7006CA52C /* AppDelegate.swift in Sources */,
 				7D5C2D101FA0848E008C1F75 /* LPLiveListController.swift in Sources */,
 				7D5C2D121FA08DC4008C1F75 /* SnapkitDemo.swift in Sources */,
+				7D8298EA1FA3345A00FDA8D9 /* SwiftDateHelper.swift in Sources */,
 				7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */,
 				7DF434811F90BF83006D5698 /* XibNormalView.swift in Sources */,
 				7D6314001FA09A8E00084BB2 /* LivelistModel.swift in Sources */,

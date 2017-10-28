@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftDate
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
- 
+        
+       
+        let now = DateInRegion()
+        
+        let str = now.string(format: .custom("yyyy-MM-dd HH:mm:ss"))
+        
+        print(str)
         return true
     }
 

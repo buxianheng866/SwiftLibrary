@@ -3,19 +3,22 @@ PODS:
   - Kingfisher (4.1.0)
   - LFLiveKit (2.6)
   - SnapKit (4.0.0)
+  - SwiftDate (4.4.1)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
   - LFLiveKit
   - SnapKit
+  - SwiftDate
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Kingfisher: f14df8cbe576bf55f211fa589e9869bceb4ea87d
   LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftDate: a70a534d4feed03b2a2b575e36bef82dc2286a8d
 
-PODFILE CHECKSUM: 207e5873e3afab8278b70b535f83c4644d6e06c8
+PODFILE CHECKSUM: cd88b57c9c65d303e8f5d11f161235f922d50e54
 
 COCOAPODS: 1.4.0.beta.1

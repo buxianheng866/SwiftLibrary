@@ -9,7 +9,7 @@
 /*
 有默认 default字样
  static let `default` = DownloadManager()
-
+ superView.subviews.contains(self)
  
  
  */

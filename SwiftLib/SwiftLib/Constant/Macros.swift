@@ -31,17 +31,21 @@ func printLog<T>(_ message: T, file: String = #file, funcName: String = #functio
 }
 
 
-let isPhoneX = UIScreen.main.currentMode?.size.height == 2436
+
 
 let mScreenH = UIScreen.main.bounds.height
+
 let mScreenW = UIScreen.main.bounds.width
+
+let kSafeAreaInset = UIApplication.shared.delegate?.window??.safeAreaInsets ?? UIEdgeInsets.zero
+
+
+let isPhoneX = UIScreen.main.currentMode?.size.height == 2436
 
 let kNavBarColor = UIColor.orange
 
-
 let kApplication = UIApplication.shared
 
-let kSafeAreaInset = UIApplication.shared.delegate?.window??.safeAreaInsets ?? UIEdgeInsets.zero
 
 
 let kGenalTextFont: CGFloat = 15
