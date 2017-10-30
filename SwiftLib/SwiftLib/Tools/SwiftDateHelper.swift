@@ -42,8 +42,17 @@ struct SwiftDateHelper {
         let _ = DateInRegion(string: "2017-10-27 18:30:00", format: .custom("yyyy-MM-dd HH:mm:ss"))!
         
         //时间转字符串
-        let _ = now.string(format: .custom("yyyy-MM-dd HH:mm:ss"))
+        let _ = now.string(format: .custom("yyyy-MM-dd HH:mm:ss")) //now.string(custom: "yyyy-MM-dd HH:mm:ss")
         
+        // 计算时间
+        let _ = now + 3.day + 5.minute + 1.month
+        
+        //        date1 > date2 //比较日期
+
+        let _ = now.atTime(hour: 12, minute: 5, second: 23) // 今天的日子 + 12:5:23
+        
+        let da = now - 2.hour
+        let _ = try! da.colloquialSinceNow()  // 2小时之前
     }
     
 }

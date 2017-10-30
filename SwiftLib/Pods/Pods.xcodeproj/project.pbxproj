@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -620,7 +620,7 @@
 		12E5CFF5E6C195F62B5ECBE2B178D0D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		135599D7CA658830DBC4DDC1B8E437DF /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		13D299E8C8DE9D1AB3C4EECF6AF8DF2D /* GPUImage3x3ConvolutionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImage3x3ConvolutionFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImage3x3ConvolutionFilter.m; sourceTree = "<group>"; };
-		13EC77AC2A31ED1B84F9B69E1AD332BF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EC77AC2A31ED1B84F9B69E1AD332BF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		143F1E38250D58DC239EE974728C5EDE /* GPUImageFilterPipeline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageFilterPipeline.m; path = LFLiveKit/Vendor/GPUImage/GPUImageFilterPipeline.m; sourceTree = "<group>"; };
 		146CDAF431B07CFE79A77EC80E7C1BC9 /* GPUImageColorBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageColorBlendFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageColorBlendFilter.h; sourceTree = "<group>"; };
 		1545F37791AAEA02E26640DDB3A058A7 /* GPUImageFramebuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageFramebuffer.h; path = LFLiveKit/Vendor/GPUImage/GPUImageFramebuffer.h; sourceTree = "<group>"; };
@@ -628,7 +628,7 @@
 		15DD7ED9F5BA6BCB838B0566323ACA26 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		161660A982AF5AAC7A024D030C23A16A /* GPUImageBilateralFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageBilateralFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageBilateralFilter.h; sourceTree = "<group>"; };
 		166F364751BAE480406DAED822F9738C /* GPUImageTextureInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageTextureInput.h; path = LFLiveKit/Vendor/GPUImage/GPUImageTextureInput.h; sourceTree = "<group>"; };
-		17AFE3733A4CF9798B439D2E95CB9982 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftDate.framework; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17AFE3733A4CF9798B439D2E95CB9982 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B6481B0FCBF3C0EAD53D6FF9F82440 /* GPUImageFourInputFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageFourInputFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageFourInputFilter.h; sourceTree = "<group>"; };
 		17F9A51814BC8B4444F4AAAFC152CAB9 /* GPUImageBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageBuffer.h; path = LFLiveKit/Vendor/GPUImage/GPUImageBuffer.h; sourceTree = "<group>"; };
 		182C424B3C4EF6D502A66F3B83B816F0 /* GPUImagePixellatePositionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImagePixellatePositionFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImagePixellatePositionFilter.h; sourceTree = "<group>"; };
@@ -639,7 +639,7 @@
 		19026E7336BDE24B8C4CC7F515DAC794 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
 		19B3F8B3B977B655953F423E572A002C /* GPUImageThresholdedNonMaximumSuppressionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageThresholdedNonMaximumSuppressionFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageThresholdedNonMaximumSuppressionFilter.m; sourceTree = "<group>"; };
 		1B70FE5F1B146F5FBFB4A1B3BA502FBC /* GPUImageSolarizeFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageSolarizeFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageSolarizeFilter.m; sourceTree = "<group>"; };
-		1BA13037A5558556F706A9D1B17B3754 /* Pods_SwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftLib.framework; path = "Pods-SwiftLib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA13037A5558556F706A9D1B17B3754 /* Pods_SwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C14C038F98A887C8D951995B34806C9 /* LFAVEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LFAVEncoder.h; path = LFLiveKit/coder/H264/LFAVEncoder.h; sourceTree = "<group>"; };
 		1C2F75679FDFD3977B83F491D696B9A4 /* GPUImageSharpenFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageSharpenFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageSharpenFilter.m; sourceTree = "<group>"; };
 		1C3DA06EF4C4BE31CE53D99F887E32A8 /* GPUImageSketchFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageSketchFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageSketchFilter.m; sourceTree = "<group>"; };
@@ -666,7 +666,7 @@
 		269287E316E99C341C10B1534E762027 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		26B0BC341AE4A7277C606A16DB1F11EB /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		26C925D040648773EEEFCD3B3947D608 /* LFStreamingBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LFStreamingBuffer.m; path = LFLiveKit/publish/LFStreamingBuffer.m; sourceTree = "<group>"; };
-		271764641311FFCACB16383C4CE94360 /* LFH264VideoEncoder.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = LFH264VideoEncoder.mm; path = LFLiveKit/coder/LFH264VideoEncoder.mm; sourceTree = "<group>"; };
+		271764641311FFCACB16383C4CE94360 /* LFH264VideoEncoder.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = LFH264VideoEncoder.mm; path = LFLiveKit/coder/LFH264VideoEncoder.mm; sourceTree = "<group>"; };
 		271D3A97B57599BD0D5A747626E53E28 /* GPUImageRawDataInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageRawDataInput.h; path = LFLiveKit/Vendor/GPUImage/GPUImageRawDataInput.h; sourceTree = "<group>"; };
 		27CE8635CA0B6A6F77FF411C5C1A30B6 /* GPUImageDissolveBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageDissolveBlendFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageDissolveBlendFilter.m; sourceTree = "<group>"; };
 		28065F90F539CF4DFC1B36EE967FBB02 /* GPUImageRawDataInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageRawDataInput.m; path = LFLiveKit/Vendor/GPUImage/GPUImageRawDataInput.m; sourceTree = "<group>"; };
@@ -689,7 +689,7 @@
 		2C5AC4CB679DB72F18121031DB02643C /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
 		2D3B2EE8CE9F8BC2F21D259294C38942 /* GPUImageHighPassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHighPassFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageHighPassFilter.h; sourceTree = "<group>"; };
 		2D6242F88582FD54C0B28D1888B8B7D6 /* GPUImageXYDerivativeFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageXYDerivativeFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageXYDerivativeFilter.h; sourceTree = "<group>"; };
-		2F962CC8DCD920E19731C67438E1F749 /* LFLiveKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LFLiveKit.modulemap; sourceTree = "<group>"; };
+		2F962CC8DCD920E19731C67438E1F749 /* LFLiveKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LFLiveKit.modulemap; sourceTree = "<group>"; };
 		2FA5514D253C8B0EBFC56BFD0EDBFF80 /* GPUImageZoomBlurFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageZoomBlurFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageZoomBlurFilter.m; sourceTree = "<group>"; };
 		3070D8B7F5C316AAA193BBE8686A3D97 /* GPUImageToonFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageToonFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageToonFilter.h; sourceTree = "<group>"; };
 		308C3A728C515E0E688E94ED67DDCD99 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
@@ -720,14 +720,14 @@
 		3B3B4E744BBE7A1ED50D5C81B4ADE149 /* GPUImageEmbossFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageEmbossFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageEmbossFilter.m; sourceTree = "<group>"; };
 		3BA2733CB50353459D54DE78B4C1BFC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA78E1C32AFFC2B61742627163AFF60 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
-		3BD5541BB0C108BC609B12E42AC8D0FC /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftDate.modulemap; sourceTree = "<group>"; };
+		3BD5541BB0C108BC609B12E42AC8D0FC /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftDate.modulemap; sourceTree = "<group>"; };
 		3BDEACDD83A2FE96FDC8934FD5BBE3C2 /* DateInRegion+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "Sources/SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
 		3C0D6F79FE33682A44CEC0685CEF0827 /* GPUImageHighlightShadowTintFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHighlightShadowTintFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageHighlightShadowTintFilter.h; sourceTree = "<group>"; };
 		3C1457831B598B2404AC5A24CEB95807 /* GPUImageCrosshatchFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageCrosshatchFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageCrosshatchFilter.h; sourceTree = "<group>"; };
 		3C5E9DAE06E81D09E4E9BB9EC8A6DB0F /* GPUImageSphereRefractionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageSphereRefractionFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageSphereRefractionFilter.m; sourceTree = "<group>"; };
 		3C78F0F305B2716C86BB5DB781509F15 /* LFLiveVideoConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LFLiveVideoConfiguration.m; path = LFLiveKit/configuration/LFLiveVideoConfiguration.m; sourceTree = "<group>"; };
 		3C9D7099DCB96F6DD1B607CBADDA17FC /* GPUImageTextureInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageTextureInput.m; path = LFLiveKit/Vendor/GPUImage/GPUImageTextureInput.m; sourceTree = "<group>"; };
-		3CB7DADF687C01BCA46C2CB97E2450BD /* log.c */ = {isa = PBXFileReference; includeInIndex = 1; name = log.c; path = "LFLiveKit/Vendor/pili-librtmp/log.c"; sourceTree = "<group>"; };
+		3CB7DADF687C01BCA46C2CB97E2450BD /* log.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = log.c; path = "LFLiveKit/Vendor/pili-librtmp/log.c"; sourceTree = "<group>"; };
 		3D12E3DBB63F6A89BECC864432ED1800 /* GPUImageAmatorkaFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageAmatorkaFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageAmatorkaFilter.h; sourceTree = "<group>"; };
 		3D9A6E8257726FB372A759EFD894774C /* LFVideoEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LFVideoEncoder.h; path = LFLiveKit/coder/H264/LFVideoEncoder.h; sourceTree = "<group>"; };
 		3E7FAD71CCA03FDE922E1470793CBB35 /* GPUImageHighlightShadowFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHighlightShadowFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageHighlightShadowFilter.m; sourceTree = "<group>"; };
@@ -755,7 +755,7 @@
 		4A367F48BA0EB079BE7BC959AD65DC7A /* GPUImageBulgeDistortionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageBulgeDistortionFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageBulgeDistortionFilter.m; sourceTree = "<group>"; };
 		4A4D19A1047D7C3E4CF38F10071327A4 /* GPUImageHighlightShadowFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHighlightShadowFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageHighlightShadowFilter.h; sourceTree = "<group>"; };
 		4A7D9F0A51B2E772108C2A6AE458C8D0 /* Pods-SwiftLib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftLib-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4AA2F03986F7D236110301ADD66735D2 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		4AA2F03986F7D236110301ADD66735D2 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		4B231484C7BBCA1B578B06235833506F /* Date+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Formatter.swift"; path = "Sources/SwiftDate/Date+Formatter.swift"; sourceTree = "<group>"; };
 		4B93E8356130C2B030A01B20BE51BD7A /* log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log.h; path = "LFLiveKit/Vendor/pili-librtmp/log.h"; sourceTree = "<group>"; };
 		4C0B7E5C547021C7D255BB449C9BF2B8 /* GPUImageRGBClosingFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageRGBClosingFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageRGBClosingFilter.m; sourceTree = "<group>"; };
@@ -771,7 +771,7 @@
 		529852984DCB208B3A397A38E21483FA /* LFAudioEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LFAudioEncoding.h; path = LFLiveKit/coder/LFAudioEncoding.h; sourceTree = "<group>"; };
 		5303E8C7F9090F232350BF106F832E64 /* GPUImageMultiplyBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageMultiplyBlendFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageMultiplyBlendFilter.m; sourceTree = "<group>"; };
 		5310A09A356794B4B5692AB2A35F223B /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		544F6A339F817DACB6E12CA749E03303 /* amf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = amf.c; path = "LFLiveKit/Vendor/pili-librtmp/amf.c"; sourceTree = "<group>"; };
+		544F6A339F817DACB6E12CA749E03303 /* amf.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = amf.c; path = "LFLiveKit/Vendor/pili-librtmp/amf.c"; sourceTree = "<group>"; };
 		545BE5DB293AACB995CC347995373B14 /* GPUImageHueFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHueFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageHueFilter.h; sourceTree = "<group>"; };
 		5493EFA1F47CAB8C3DA8010B9296B900 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		54D987A13BAAAACF384AB5AA0874CC5A /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
@@ -819,7 +819,7 @@
 		6A4A2E24B6F5A22FAED20696DD3B8FB2 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		6B0BB77F21A26E82DFC5198EA2734130 /* GPUImageThresholdSketchFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageThresholdSketchFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageThresholdSketchFilter.m; sourceTree = "<group>"; };
 		6B20E0D4C9EE4532646273B07609CEE7 /* GPUImageMultiplyBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageMultiplyBlendFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageMultiplyBlendFilter.h; sourceTree = "<group>"; };
-		6B90956A20A4C4DAA0CEB5E3F3FEE9C3 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		6B90956A20A4C4DAA0CEB5E3F3FEE9C3 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kingfisher.modulemap; sourceTree = "<group>"; };
 		6C2D7E87A3F4A27C393064F60BDA4B0D /* CalendarName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarName.swift; path = Sources/SwiftDate/CalendarName.swift; sourceTree = "<group>"; };
 		6CBB1CA7C518F88EADC3FE14C2DA3994 /* GPUImageTwoPassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageTwoPassFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageTwoPassFilter.h; sourceTree = "<group>"; };
 		6CC6E3E3ED7771EBB0D7E392A5771EA6 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Extensions.swift"; path = "Sources/SwiftDate/TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
@@ -905,7 +905,7 @@
 		8EBACC1288946E51436ADF964E44D092 /* GPUImageRGBOpeningFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageRGBOpeningFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageRGBOpeningFilter.h; sourceTree = "<group>"; };
 		8EF7C0978639ACD1212EB2B735A335A4 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		900500E95B7DFCABE8CC5810AEA419EC /* GPUImagePicture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImagePicture.m; path = LFLiveKit/Vendor/GPUImage/iOS/GPUImagePicture.m; sourceTree = "<group>"; };
-		9072DCFAFDC60C75D37FBE4B547F2771 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9072DCFAFDC60C75D37FBE4B547F2771 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		908303EBF7A95E5C7FC8791E0AE7C2F1 /* GPUImageExposureFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageExposureFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageExposureFilter.h; sourceTree = "<group>"; };
 		90B74AD0DDF9744FA403B0293AC5E779 /* LFFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LFFrame.m; path = LFLiveKit/objects/LFFrame.m; sourceTree = "<group>"; };
 		91CBEED2237631D087776379C1A6B028 /* GPUImageGlassSphereFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageGlassSphereFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageGlassSphereFilter.h; sourceTree = "<group>"; };
@@ -914,8 +914,8 @@
 		929F818386FEBE438C94C5E1408C3D83 /* GPUImageBrightnessFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageBrightnessFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageBrightnessFilter.m; sourceTree = "<group>"; };
 		92BC62B6924C4205C206804C8120BA4A /* LFGPUImageBeautyFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LFGPUImageBeautyFilter.h; path = LFLiveKit/filter/LFGPUImageBeautyFilter.h; sourceTree = "<group>"; };
 		92F427FB76AAC3F77874B9B085645E7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94D5FB7D2CF2074E96D71CA74C2084BB /* hashswf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hashswf.c; path = "LFLiveKit/Vendor/pili-librtmp/hashswf.c"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94D5FB7D2CF2074E96D71CA74C2084BB /* hashswf.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hashswf.c; path = "LFLiveKit/Vendor/pili-librtmp/hashswf.c"; sourceTree = "<group>"; };
 		951AEE973C90C696940C98420075C31F /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
 		96B8D2C9114FE0604E03253F47C84853 /* GPUImagePicture+TextureSubimage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GPUImagePicture+TextureSubimage.m"; path = "LFLiveKit/Vendor/GPUImage/iOS/GPUImagePicture+TextureSubimage.m"; sourceTree = "<group>"; };
 		97DAD13B7E8CB6267F0E22F2DE4A55DD /* LocaleName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaleName.swift; path = Sources/SwiftDate/LocaleName.swift; sourceTree = "<group>"; };
@@ -942,7 +942,7 @@
 		A23F861ADFC866FF5CA2A7AB270BF0F4 /* LFLiveKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LFLiveKit.xcconfig; sourceTree = "<group>"; };
 		A3657ACFC50F63D883DB58D9E27275FE /* GPUImageLuminosity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageLuminosity.h; path = LFLiveKit/Vendor/GPUImage/GPUImageLuminosity.h; sourceTree = "<group>"; };
 		A3AEF356804669E912B1B4E6260DD90F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		A402CD77FAFA594D5E45A4C1DEB730F1 /* parseurl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = parseurl.c; path = "LFLiveKit/Vendor/pili-librtmp/parseurl.c"; sourceTree = "<group>"; };
+		A402CD77FAFA594D5E45A4C1DEB730F1 /* parseurl.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = parseurl.c; path = "LFLiveKit/Vendor/pili-librtmp/parseurl.c"; sourceTree = "<group>"; };
 		A4BE7F580F90AD2BA951D6D9E566D22C /* GPUImageOpeningFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageOpeningFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageOpeningFilter.m; sourceTree = "<group>"; };
 		A5184A99E77DABFD2AEAF9ACFE996521 /* GPUImageSwirlFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageSwirlFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageSwirlFilter.m; sourceTree = "<group>"; };
 		A5792AFDC6DE86BCA127D24E9689B9B1 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
@@ -963,7 +963,7 @@
 		AAE338DEB3D8D03DE371A8A65B7131D3 /* GPUImageBrightnessFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageBrightnessFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageBrightnessFilter.h; sourceTree = "<group>"; };
 		AB56D1A4584099D3D932BDF325B30717 /* GPUImageAdaptiveThresholdFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageAdaptiveThresholdFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageAdaptiveThresholdFilter.h; sourceTree = "<group>"; };
 		AB993BEBD35B0266A43BEACED7678B2D /* GPUImageMonochromeFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageMonochromeFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageMonochromeFilter.h; sourceTree = "<group>"; };
-		ABF459AC4DF487CFC76E3CE1A567F5F6 /* error.c */ = {isa = PBXFileReference; includeInIndex = 1; name = error.c; path = "LFLiveKit/Vendor/pili-librtmp/error.c"; sourceTree = "<group>"; };
+		ABF459AC4DF487CFC76E3CE1A567F5F6 /* error.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = error.c; path = "LFLiveKit/Vendor/pili-librtmp/error.c"; sourceTree = "<group>"; };
 		AC65B6C0A426571585D3A56DDFC713BA /* GPUImageiOSBlurFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageiOSBlurFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageiOSBlurFilter.m; sourceTree = "<group>"; };
 		AC8EF597FC5157C7D1F5F12362BDAE9A /* GPUImageSaturationBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageSaturationBlendFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageSaturationBlendFilter.h; sourceTree = "<group>"; };
 		AC9EF8E2D5B0163F9B4E6EFDEEE5EB2F /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Sources/SwiftDate/Region.swift; sourceTree = "<group>"; };
@@ -975,10 +975,10 @@
 		AE94C5934D39B4519B6B11DB946518A6 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		AF0E790B47B72FE2A73FF07B91A868E4 /* GPUImageAverageColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageAverageColor.h; path = LFLiveKit/Vendor/GPUImage/GPUImageAverageColor.h; sourceTree = "<group>"; };
 		AFD3847F27C9526CD690BDF2C86E2597 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
-		B03448DF19B3B470F4BF44F8C79B3A82 /* LFNALUnit.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = LFNALUnit.cpp; path = LFLiveKit/coder/H264/LFNALUnit.cpp; sourceTree = "<group>"; };
+		B03448DF19B3B470F4BF44F8C79B3A82 /* LFNALUnit.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = LFNALUnit.cpp; path = LFLiveKit/coder/H264/LFNALUnit.cpp; sourceTree = "<group>"; };
 		B065C491FDED6050D7203B17284E4C28 /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localization.swift; path = Sources/SwiftDate/Localization.swift; sourceTree = "<group>"; };
 		B16A13E634D4314E2085A49596C45B0F /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
-		B244718716032F80FA0E83CEDD51594A /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B244718716032F80FA0E83CEDD51594A /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27E6523D9E2B0381DD6197371B5E1A9 /* GPUImageBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageBuffer.m; path = LFLiveKit/Vendor/GPUImage/GPUImageBuffer.m; sourceTree = "<group>"; };
 		B2B8173C9D03F32E0CA2CB6CDDCFF217 /* bytes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bytes.h; path = "LFLiveKit/Vendor/pili-librtmp/bytes.h"; sourceTree = "<group>"; };
 		B3169C36E4219D7130FE2FC3394D86A0 /* GPUImageCGAColorspaceFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageCGAColorspaceFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageCGAColorspaceFilter.h; sourceTree = "<group>"; };
@@ -1004,7 +1004,7 @@
 		BC00F8D99661673E4F87BFCCCAE04C93 /* GPUImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImage.h; path = LFLiveKit/Vendor/GPUImage/GPUImage.h; sourceTree = "<group>"; };
 		BC67414A8DEED1C3524035DFF9DA0F23 /* GPUImageExposureFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageExposureFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageExposureFilter.m; sourceTree = "<group>"; };
 		BC778CBF17AB5F554DB7C75B70B84CDA /* rtmp_sys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rtmp_sys.h; path = "LFLiveKit/Vendor/pili-librtmp/rtmp_sys.h"; sourceTree = "<group>"; };
-		BD6E772E6C478FE3FCBC6906578B29F5 /* LFLiveKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LFLiveKit.framework; path = LFLiveKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD6E772E6C478FE3FCBC6906578B29F5 /* LFLiveKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LFLiveKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7D95529C24A20EE32933227C04C629 /* GPUImageTwoInputFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageTwoInputFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageTwoInputFilter.h; sourceTree = "<group>"; };
 		BEDA2FAA2322FB858AC0D6CB0DE52D76 /* GPUImageHistogramFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHistogramFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageHistogramFilter.m; sourceTree = "<group>"; };
 		BEEC464F60FBF7BAF12A5DA37E27C73D /* GPUImageDarkenBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageDarkenBlendFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageDarkenBlendFilter.h; sourceTree = "<group>"; };
@@ -1052,7 +1052,7 @@
 		D05FCA77DBEEA8CC66A065D9496FACE2 /* GPUImageDivideBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageDivideBlendFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageDivideBlendFilter.m; sourceTree = "<group>"; };
 		D24CA9474AB9E9569B70342C8E21B55F /* Date+Compare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Compare.swift"; path = "Sources/SwiftDate/Date+Compare.swift"; sourceTree = "<group>"; };
 		D29B201A8824FDE3E8FAC2D686EA8567 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
-		D3AEA224594CCDA8225E64F0C449CD22 /* rtmp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rtmp.c; path = "LFLiveKit/Vendor/pili-librtmp/rtmp.c"; sourceTree = "<group>"; };
+		D3AEA224594CCDA8225E64F0C449CD22 /* rtmp.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = rtmp.c; path = "LFLiveKit/Vendor/pili-librtmp/rtmp.c"; sourceTree = "<group>"; };
 		D444B32B5190EECB4781D62CF1C05F06 /* GPUImageChromaKeyFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageChromaKeyFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageChromaKeyFilter.m; sourceTree = "<group>"; };
 		D536BCB8849CF48AC608E629676D66E0 /* GPUImageMotionBlurFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageMotionBlurFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageMotionBlurFilter.h; sourceTree = "<group>"; };
 		D629814212134238C42CDE25133E09CE /* GPUImageAdaptiveThresholdFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageAdaptiveThresholdFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageAdaptiveThresholdFilter.m; sourceTree = "<group>"; };
@@ -1120,11 +1120,11 @@
 		F540AF89D941F82DCDE6C65EF1EF4384 /* LFVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LFVideoFrame.h; path = LFLiveKit/objects/LFVideoFrame.h; sourceTree = "<group>"; };
 		F54666D7CC88549C7AE4625109A40427 /* GPUImageColorMatrixFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageColorMatrixFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageColorMatrixFilter.m; sourceTree = "<group>"; };
 		F57DFDA19B3D049282D7AFC13D31B147 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
-		F5F8F0BCE336B06B96926F2285802279 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F5F8F0BCE336B06B96926F2285802279 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		F607CB5BBDF5B27E055077F7F2C2712E /* GPUImageMosaicFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageMosaicFilter.m; path = LFLiveKit/Vendor/GPUImage/GPUImageMosaicFilter.m; sourceTree = "<group>"; };
-		F6BDCA21CAC6A4486B442CACCB769D3D /* LFAVEncoder.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = LFAVEncoder.mm; path = LFLiveKit/coder/H264/LFAVEncoder.mm; sourceTree = "<group>"; };
+		F6BDCA21CAC6A4486B442CACCB769D3D /* LFAVEncoder.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = LFAVEncoder.mm; path = LFLiveKit/coder/H264/LFAVEncoder.mm; sourceTree = "<group>"; };
 		F6CB8F8525CE49B63CCC53EAD27F5CD2 /* LFHardwareVideoEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LFHardwareVideoEncoder.m; path = LFLiveKit/coder/LFHardwareVideoEncoder.m; sourceTree = "<group>"; };
-		F820E7E7E8888D9602DEA601E58FC276 /* Pods-SwiftLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftLib.modulemap"; sourceTree = "<group>"; };
+		F820E7E7E8888D9602DEA601E58FC276 /* Pods-SwiftLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftLib.modulemap"; sourceTree = "<group>"; };
 		F8569C9F5C6C1A511AC8612FEED7A38F /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		F9C02C021F59D8DB776C875F9FED6939 /* SwiftDate.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SwiftDate.bundle; path = Sources/SwiftDate/SwiftDate.bundle; sourceTree = "<group>"; };
 		FA5FFEC50B69D5B784A214EC98726122 /* GPUImageThresholdedNonMaximumSuppressionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageThresholdedNonMaximumSuppressionFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageThresholdedNonMaximumSuppressionFilter.h; sourceTree = "<group>"; };
@@ -1274,7 +1274,6 @@
 				618392A4093192B0B8CAD4B7CFF166A1 /* UILayoutSupport+Extensions.swift */,
 				28A2D5760B3CA624CDA83BB59B35E2C1 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -1341,7 +1340,6 @@
 				E7EF3381C292266E0F9ED203D152A1D2 /* Validation.swift */,
 				31DBE78F909FEB27230397A8CAAA4E44 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1385,7 +1383,6 @@
 				B6B2CF3E42AD479CF0EF92F641F7E326 /* Resources */,
 				F70989B841F8F94022DA467181D16E79 /* Support Files */,
 			);
-			name = SwiftDate;
 			path = SwiftDate;
 			sourceTree = "<group>";
 		};
@@ -1417,7 +1414,6 @@
 				7C6B5ED01769CA95FE724E29185E54E2 /* UIButton+Kingfisher.swift */,
 				2D6F901ABA9DB1A1E7AC2786335E8F2C /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -1836,7 +1832,6 @@
 				BC778CBF17AB5F554DB7C75B70B84CDA /* rtmp_sys.h */,
 				4D5E227A822D89759542C5864FCAB590 /* Support Files */,
 			);
-			name = LFLiveKit;
 			path = LFLiveKit;
 			sourceTree = "<group>";
 		};
@@ -2293,7 +2288,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3011,6 +3006,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
