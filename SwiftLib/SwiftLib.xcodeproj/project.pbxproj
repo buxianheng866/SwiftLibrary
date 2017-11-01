@@ -30,6 +30,17 @@
 		7D5C2D101FA0848E008C1F75 /* LPLiveListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D0F1FA0848E008C1F75 /* LPLiveListController.swift */; };
 		7D5C2D121FA08DC4008C1F75 /* SnapkitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D111FA08DC4008C1F75 /* SnapkitDemo.swift */; };
 		7D6314001FA09A8E00084BB2 /* LivelistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6313FF1FA09A8E00084BB2 /* LivelistModel.swift */; };
+		7D6B127E1FA854D400E33B82 /* LPEmotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B127D1FA854D400E33B82 /* LPEmotionHelper.swift */; };
+		7D6B12801FA862A300E33B82 /* EmotionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */; };
+		7D6B12821FA8680800E33B82 /* UITextView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B12811FA8680800E33B82 /* UITextView+Extenstion.swift */; };
+		7D6B12841FA86DB100E33B82 /* LPEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */; };
+		7D70A5FE1FA716B900BA18E9 /* IMCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A5FD1FA716B900BA18E9 /* IMCommon.swift */; };
+		7D70A6011FA7196200BA18E9 /* LPChatBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6001FA7196200BA18E9 /* LPChatBarController.swift */; };
+		7D70A6031FA71AE900BA18E9 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6021FA71AE900BA18E9 /* UITextView+Extension.swift */; };
+		7D70A6051FA71F3A00BA18E9 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6041FA71F3A00BA18E9 /* AppDelegate+Extension.swift */; };
+		7D70A6071FA7209300BA18E9 /* IMSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6061FA7209300BA18E9 /* IMSDKManager.swift */; };
+		7D70A6091FA7211700BA18E9 /* LPChatBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */; };
+		7D70A60D1FA7268900BA18E9 /* LPEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A60C1FA7268900BA18E9 /* LPEmotion.swift */; };
 		7D8298EA1FA3345A00FDA8D9 /* SwiftDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8298E91FA3345A00FDA8D9 /* SwiftDateHelper.swift */; };
 		7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */; };
 		7DA70D221F9093E9001CEE27 /* LPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D211F9093E9001CEE27 /* LPBaseViewController.swift */; };
@@ -38,6 +49,8 @@
 		7DB86DB11F99A5AD00402BA9 /* LPFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */; };
 		7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */; };
 		7DB86DB51F99EA3300402BA9 /* LPDownloadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB86DB41F99EA3300402BA9 /* LPDownloadView.xib */; };
+		7DD534AE1FA9A43A00784C1A /* UseYYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD534AD1FA9A43A00784C1A /* UseYYKit.swift */; };
+		7DDFCE2C1FA96CEB001463F2 /* ConvertModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDFCE2B1FA96CEB001463F2 /* ConvertModelData.swift */; };
 		7DE2FBEE1F9889D60028506D /* HttpNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2FBED1F9889D60028506D /* HttpNet.swift */; };
 		7DE2FBF01F988A0B0028506D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2FBEF1F988A0B0028506D /* RequestManager.swift */; };
 		7DE2FBF21F988A410028506D /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2FBF11F988A410028506D /* DownloadManager.swift */; };
@@ -88,6 +101,17 @@
 		7D5C2D0F1FA0848E008C1F75 /* LPLiveListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPLiveListController.swift; sourceTree = "<group>"; };
 		7D5C2D111FA08DC4008C1F75 /* SnapkitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapkitDemo.swift; sourceTree = "<group>"; };
 		7D6313FF1FA09A8E00084BB2 /* LivelistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivelistModel.swift; sourceTree = "<group>"; };
+		7D6B127D1FA854D400E33B82 /* LPEmotionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPEmotionHelper.swift; sourceTree = "<group>"; };
+		7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAttachment.swift; sourceTree = "<group>"; };
+		7D6B12811FA8680800E33B82 /* UITextView+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extenstion.swift"; sourceTree = "<group>"; };
+		7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPEmotionView.swift; sourceTree = "<group>"; };
+		7D70A5FD1FA716B900BA18E9 /* IMCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCommon.swift; sourceTree = "<group>"; };
+		7D70A6001FA7196200BA18E9 /* LPChatBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatBarController.swift; sourceTree = "<group>"; };
+		7D70A6021FA71AE900BA18E9 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		7D70A6041FA71F3A00BA18E9 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		7D70A6061FA7209300BA18E9 /* IMSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMSDKManager.swift; sourceTree = "<group>"; };
+		7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatBarView.swift; sourceTree = "<group>"; };
+		7D70A60C1FA7268900BA18E9 /* LPEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPEmotion.swift; sourceTree = "<group>"; };
 		7D8298E91FA3345A00FDA8D9 /* SwiftDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDateHelper.swift; sourceTree = "<group>"; };
 		7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPVerticalBtn.swift; sourceTree = "<group>"; };
 		7DA70D211F9093E9001CEE27 /* LPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPBaseViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +120,8 @@
 		7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPFileManager.swift; sourceTree = "<group>"; };
 		7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPDownloadView.swift; sourceTree = "<group>"; };
 		7DB86DB41F99EA3300402BA9 /* LPDownloadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPDownloadView.xib; sourceTree = "<group>"; };
+		7DD534AD1FA9A43A00784C1A /* UseYYKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseYYKit.swift; sourceTree = "<group>"; };
+		7DDFCE2B1FA96CEB001463F2 /* ConvertModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertModelData.swift; sourceTree = "<group>"; };
 		7DE2FBED1F9889D60028506D /* HttpNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpNet.swift; sourceTree = "<group>"; };
 		7DE2FBEF1F988A0B0028506D /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		7DE2FBF11F988A410028506D /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
@@ -132,12 +158,14 @@
 		7D0818A81F9F3CBA0084A140 /* 主要项目 */ = {
 			isa = PBXGroup;
 			children = (
-				7D0818A91F9F3CDD0084A140 /* 老朴直播 */,
+				7DDFCE281FA96A76001463F2 /* YYKit + JsonEncoder */,
+				7D70A5FC1FA716A200BA18E9 /* 即时通讯 */,
+				7D0818A91F9F3CDD0084A140 /* 推拉流 */,
 			);
 			path = "主要项目";
 			sourceTree = "<group>";
 		};
-		7D0818A91F9F3CDD0084A140 /* 老朴直播 */ = {
+		7D0818A91F9F3CDD0084A140 /* 推拉流 */ = {
 			isa = PBXGroup;
 			children = (
 				7D0818AE1F9F40770084A140 /* LPLiveStreamController.swift */,
@@ -149,7 +177,7 @@
 				7D5C2D071FA082F2008C1F75 /* LPPlayerController.swift */,
 				7D5C2D081FA082F2008C1F75 /* LPPlayerController.xib */,
 			);
-			path = "老朴直播";
+			path = "推拉流";
 			sourceTree = "<group>";
 		};
 		7D085C731F8F48C7006CA52C = {
@@ -174,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				7D085C7F1F8F48C7006CA52C /* AppDelegate.swift */,
+				7D70A6041FA71F3A00BA18E9 /* AppDelegate+Extension.swift */,
 				7D085C811F8F48C7006CA52C /* ViewController.swift */,
 				7DB86DAE1F999ED500402BA9 /* GenalNotes.swift */,
 				7D0818A81F9F3CBA0084A140 /* 主要项目 */,
@@ -249,6 +278,48 @@
 				7D085CD81F8F6425006CA52C /* SwiftyJSON.swift */,
 			);
 			path = SwiftJson;
+			sourceTree = "<group>";
+		};
+		7D70A5FC1FA716A200BA18E9 /* 即时通讯 */ = {
+			isa = PBXGroup;
+			children = (
+				7D70A5FD1FA716B900BA18E9 /* IMCommon.swift */,
+				7D70A6061FA7209300BA18E9 /* IMSDKManager.swift */,
+				7D70A5FF1FA716EB00BA18E9 /* KeyboardTool */,
+			);
+			path = "即时通讯";
+			sourceTree = "<group>";
+		};
+		7D70A5FF1FA716EB00BA18E9 /* KeyboardTool */ = {
+			isa = PBXGroup;
+			children = (
+				7D70A6001FA7196200BA18E9 /* LPChatBarController.swift */,
+				7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */,
+				7D70A6021FA71AE900BA18E9 /* UITextView+Extension.swift */,
+				7D70A60A1FA7264D00BA18E9 /* EmojHelper */,
+			);
+			path = KeyboardTool;
+			sourceTree = "<group>";
+		};
+		7D70A60A1FA7264D00BA18E9 /* EmojHelper */ = {
+			isa = PBXGroup;
+			children = (
+				7D70A60C1FA7268900BA18E9 /* LPEmotion.swift */,
+				7D6B127D1FA854D400E33B82 /* LPEmotionHelper.swift */,
+				7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */,
+				7D6B12811FA8680800E33B82 /* UITextView+Extenstion.swift */,
+				7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */,
+			);
+			path = EmojHelper;
+			sourceTree = "<group>";
+		};
+		7DDFCE281FA96A76001463F2 /* YYKit + JsonEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				7DDFCE2B1FA96CEB001463F2 /* ConvertModelData.swift */,
+				7DD534AD1FA9A43A00784C1A /* UseYYKit.swift */,
+			);
+			path = "YYKit + JsonEncoder";
 			sourceTree = "<group>";
 		};
 		7DE2FBEC1F987CBF0028506D /* NetRequest */ = {
@@ -428,6 +499,7 @@
 				"${BUILT_PRODUCTS_DIR}/LFLiveKit/LFLiveKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -436,6 +508,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLiveKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -450,8 +523,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA70D221F9093E9001CEE27 /* LPBaseViewController.swift in Sources */,
+				7D6B127E1FA854D400E33B82 /* LPEmotionHelper.swift in Sources */,
+				7D6B12801FA862A300E33B82 /* EmotionAttachment.swift in Sources */,
 				7D5C2D0D1FA08437008C1F75 /* LiveListCell.swift in Sources */,
 				7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */,
+				7DDFCE2C1FA96CEB001463F2 /* ConvertModelData.swift in Sources */,
 				7DE2FBF01F988A0B0028506D /* RequestManager.swift in Sources */,
 				7D0818B01F9F40770084A140 /* LPLiveStreamController.swift in Sources */,
 				7D085CD21F8F61EB006CA52C /* Macros.swift in Sources */,
@@ -459,19 +535,29 @@
 				7DB86DB11F99A5AD00402BA9 /* LPFileManager.swift in Sources */,
 				7D085CD41F8F63E9006CA52C /* HttpRequest.swift in Sources */,
 				7D085C821F8F48C7006CA52C /* ViewController.swift in Sources */,
+				7D70A6051FA71F3A00BA18E9 /* AppDelegate+Extension.swift in Sources */,
+				7D70A5FE1FA716B900BA18E9 /* IMCommon.swift in Sources */,
 				7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */,
 				7D085CDB1F8F7589006CA52C /* UIColor+Extension.swift in Sources */,
 				7D085CD91F8F6425006CA52C /* SwiftyJSON.swift in Sources */,
+				7D6B12841FA86DB100E33B82 /* LPEmotionView.swift in Sources */,
+				7D70A6031FA71AE900BA18E9 /* UITextView+Extension.swift in Sources */,
 				7DB86DAF1F999ED500402BA9 /* GenalNotes.swift in Sources */,
 				7D085C801F8F48C7006CA52C /* AppDelegate.swift in Sources */,
 				7D5C2D101FA0848E008C1F75 /* LPLiveListController.swift in Sources */,
+				7D70A6011FA7196200BA18E9 /* LPChatBarController.swift in Sources */,
 				7D5C2D121FA08DC4008C1F75 /* SnapkitDemo.swift in Sources */,
 				7D8298EA1FA3345A00FDA8D9 /* SwiftDateHelper.swift in Sources */,
 				7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */,
 				7DF434811F90BF83006D5698 /* XibNormalView.swift in Sources */,
 				7D6314001FA09A8E00084BB2 /* LivelistModel.swift in Sources */,
 				7DE2FBEE1F9889D60028506D /* HttpNet.swift in Sources */,
+				7D6B12821FA8680800E33B82 /* UITextView+Extenstion.swift in Sources */,
+				7D70A6091FA7211700BA18E9 /* LPChatBarView.swift in Sources */,
+				7D70A60D1FA7268900BA18E9 /* LPEmotion.swift in Sources */,
 				7D179DB11FA073EC008F4B97 /* Date+Extension.swift in Sources */,
+				7D70A6071FA7209300BA18E9 /* IMSDKManager.swift in Sources */,
+				7DD534AE1FA9A43A00784C1A /* UseYYKit.swift in Sources */,
 				7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */,
 				7DFC9A1A1FA31C07009FF4B0 /* UIView+Extension.swift in Sources */,
 				7DE2FBF21F988A410028506D /* DownloadManager.swift in Sources */,
@@ -626,6 +712,52 @@
 				INFOPLIST_FILE = SwiftLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GPUImage\"",
+					"-l\"NMCVideoModule\"",
+					"-l\"aacplus\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"event\"",
+					"-l\"nio\"",
+					"-l\"nts\"",
+					"-l\"nvs\"",
+					"-l\"openh264\"",
+					"-l\"opus\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LFLiveKit\"",
+					"-framework",
+					"\"NIMAVChat\"",
+					"-framework",
+					"\"NIMSDK\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftDate\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-framework",
+					"\"YYKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cndotabestdota.SwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = SwiftLib/Constant/Swift_OC_Bridging.h;
@@ -648,6 +780,52 @@
 				INFOPLIST_FILE = SwiftLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GPUImage\"",
+					"-l\"NMCVideoModule\"",
+					"-l\"aacplus\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"event\"",
+					"-l\"nio\"",
+					"-l\"nts\"",
+					"-l\"nvs\"",
+					"-l\"openh264\"",
+					"-l\"opus\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LFLiveKit\"",
+					"-framework",
+					"\"NIMAVChat\"",
+					"-framework",
+					"\"NIMSDK\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftDate\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"VideoToolbox\"",
+					"-framework",
+					"\"YYKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cndotabestdota.SwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = SwiftLib/Constant/Swift_OC_Bridging.h;

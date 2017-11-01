@@ -5,6 +5,9 @@ PODS:
   - NIMSDK (4.3.0)
   - SnapKit (4.0.0)
   - SwiftDate (4.4.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - Alamofire
@@ -13,6 +16,7 @@ DEPENDENCIES:
   - NIMSDK
   - SnapKit
   - SwiftDate
+  - YYKit
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
@@ -21,7 +25,8 @@ SPEC CHECKSUMS:
   NIMSDK: 4c7d69e30a1d7a45df07af3d28b87810510f6987
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftDate: a70a534d4feed03b2a2b575e36bef82dc2286a8d
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: b605c263245f18a8348893e075598b5e4c259bbb
+PODFILE CHECKSUM: 2b5b76a7d73d1849fc891e6fe4f8559650c60317
 
 COCOAPODS: 1.4.0.beta.2

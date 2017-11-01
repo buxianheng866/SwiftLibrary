@@ -26,7 +26,7 @@ func isExist(atPath: String) -> Bool {
 }
 
 func cacheDirectory() -> URL {
-    let cachesURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
+    let cachesURL = kApplication.cachesURL
     return cachesURL
 }
 

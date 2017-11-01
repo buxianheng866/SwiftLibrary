@@ -47,11 +47,15 @@ let kNavBarColor = UIColor.orange
 let kApplication = UIApplication.shared
 
 
-
 let kGenalTextFont: CGFloat = 15
 
-
-
+// MARK:- 颜色方法
+func normalRGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+    return UIColor (red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+}
+func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+    return UIColor (red: r, green: g, blue: b, alpha: a)
+}
 
 
 

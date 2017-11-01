@@ -17,14 +17,21 @@ class ViewController: UIViewController {
         return xib
     }()
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         xibView.frame = CGRect(x: 0, y: 50, width: mScreenW, height: 200)
         self.view.addSubview(xibView)
+
+        let lab = LPTagView.obatainAttributed { (maker) in
+            
+        }
+        lab.backgroundColor = UIColor.cyan
+        self.view.addSubview(lab)
+
         
-    
         
-      
         
     }
     
