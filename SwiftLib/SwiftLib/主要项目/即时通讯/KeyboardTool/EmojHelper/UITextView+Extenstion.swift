@@ -28,10 +28,13 @@ extension UITextView {
             deleteBackward()
             return
         }
+        // 创建附件
         let attachment = EmotionAttachment()
         attachment.text = emotion.text
+        // 设置图片
         attachment.image = UIImage(contentsOfFile: emotion.imgPath!)
         let font = self.font!
+        // 设置附件大小 表情根文本打大小一致
         attachment.bounds = CGRect(x: 0, y: -4, width: font.lineHeight, height: font.lineHeight)
         let attrImageStr = NSAttributedString(attachment: attachment)
         

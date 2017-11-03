@@ -49,7 +49,6 @@ class LPEmotionView: UIView {
     
     lazy var emotionButton: UIButton = {
         let emotionBtn = UIButton(type: .custom)
-        emotionBtn.backgroundColor = kChatKeyboardBgColor
         emotionBtn.addTarget(self, action: #selector(emtionBtnAct(_:)), for: .touchUpInside)
         emotionBtn.setImage(#imageLiteral(resourceName: "EmotionsEmojiHL"), for: .normal)
         return emotionBtn
@@ -57,17 +56,24 @@ class LPEmotionView: UIView {
     
     lazy var pageControl: UIPageControl = {
         let page = UIPageControl()
-        page.numberOfPages =  self.emotions.count / kAllNumerOfPage + self.emotions.count % kAllNumerOfPage == 0 ? 0 : 1
+        
+    
+        page.numberOfPages =  self.emotions.count / kAllNumerOfPage + (self.emotions.count % kAllNumerOfPage == 0 ? 0 : 1)
         page.currentPage = 0
-        page.pageIndicatorTintColor = UIColor.lightGray
+        page.pageIndicatorTintColor = UIColor.orange
+        page.currentPageIndicatorTintColor = UIColor.white
+        
         page.backgroundColor = kChatKeyboardBgColor
         return page
     }()
     
     lazy var collectionView: UICollectionView = {
-        let collect = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout())
+       
+        let collect = UICollectionView(frame: CGRect.zero, collectionViewLayout: LPHorizontalLayout(column: kNumberOfOneRow, row: kRow))
         collect.backgroundColor = kChatKeyboardBgColor
         collect.register(EmotionCollectCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        collect.showsVerticalScrollIndicator = true
+        collect.showsHorizontalScrollIndicator = false
         collect.isPagingEnabled = true
         collect.dataSource = self
         collect.delegate = self
@@ -128,24 +134,39 @@ extension LPEmotionView {
     }
 }
 
-extension LPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource {
+extension LPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let emoj = self.emotions[indexPath.row]
+        if emoj.isEmpty {
+            return
+        } else if emoj.isRemove {
+            
+        } else {
+            
+        }
         
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.emotions.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! EmotionCollectCell
+        cell.emtion = self.emotions[indexPath.item]
+        return cell
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let contentOff = scrollView.contentOffset.x
+        let page = contentOff / scrollView.frame.size.width
+        pageControl.currentPage = Int(page)
     }
 }
-
 
 class EmotionCollectCell: UICollectionViewCell {
     var emtion: LPEmotion? {
         didSet {
             guard let emo = emtion else { return }
-            if emo.isEmpty {
+            if emo.isRemove {
                emoImge.image = #imageLiteral(resourceName: "DeleteEmoticonBtn")
             } else if emo.isEmpty {
                 emoImge.image = UIImage()
@@ -166,6 +187,77 @@ class EmotionCollectCell: UICollectionViewCell {
             snp.center.equalTo(self.snp.center)
             snp.width.height.equalTo(32)
         }
+    }
+}
+
+
+class LPHorizontalLayout: UICollectionViewFlowLayout {
+    
+    // 保存所有item
+    fileprivate var attributesArr: [UICollectionViewLayoutAttributes] = []
+    fileprivate var col: Int = 0
+    fileprivate var row: Int = 0
+    
+    init(column: Int, row: Int) {
+        super.init()
+        self.col = column
+        self.row = row
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK:- 重新布局
+    override func prepare() {
+        super.prepare()
+        
+        let itemWH: CGFloat = mScreenW / CGFloat(col)
+        
+        // 设置itemSize
+        itemSize = CGSize(width: itemWH, height: itemWH)
+        minimumLineSpacing = 0
+        minimumInteritemSpacing = 0
+        scrollDirection = .horizontal
+        
+        // 设置collectionView属性
+        let insertMargin = (collectionView!.bounds.height - CGFloat(row) * itemWH) * 0.5
+        collectionView?.contentInset = UIEdgeInsetsMake(insertMargin, 0, insertMargin, 0)
+        
+        var page = 0
+        let itemsCount = collectionView?.numberOfItems(inSection: 0) ?? 0
+        for itemIndex in 0..<itemsCount {
+            let indexPath = IndexPath(item: itemIndex, section: 0)
+            let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+            
+            page = itemIndex / (col * row)
+            // 通过一系列计算, 得到x, y值
+            let x = itemSize.width * CGFloat(itemIndex % Int(col)) + (CGFloat(page) * mScreenW)
+            let y = itemSize.height * CGFloat((itemIndex - page * row * col) / col)
+            
+            attributes.frame = CGRect(x: x, y: y, width: itemSize.width, height: itemSize.height)
+            // 把每一个新的属性保存起来
+            attributesArr.append(attributes)
+        }
+        
+    }
+    
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        var rectAttributes: [UICollectionViewLayoutAttributes] = []
+        _ = attributesArr.map({
+            if rect.contains($0.frame) {
+                rectAttributes.append($0)
+            }
+        })
+        return rectAttributes
+    }
+    
+    override var collectionViewContentSize: CGSize {
+        let size: CGSize = super.collectionViewContentSize
+        let collectionViewWidth: CGFloat = self.collectionView!.frame.size.width
+        let nbOfScreen: Int = Int(ceil(size.width / collectionViewWidth))
+        let newSize: CGSize = CGSize(width: collectionViewWidth * CGFloat(nbOfScreen), height: size.height)
+        return newSize
     }
 }
 

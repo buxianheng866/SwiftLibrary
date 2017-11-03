@@ -73,12 +73,15 @@ class DownloadManager {
     
     /** 下载完成路径*/
     func downloadFilePath(_ url: String) -> URL? {
-        if let path = downloadPlist[url] as? String, let pathURL = URL(string: path) {
-            return pathURL
+        if let path = downloadPlist[url] as? String {
+            return cacheDirectory().appendingPathComponent("\(downloadFolder)/\(path)")
         }
         return nil
     }
-    
+    /** 全部下载的文件*/
+    func allDownloadFilePath() -> NSMutableDictionary {
+        return dictionaryOfData("downloadPath.plist")
+    }
     /** 下载百分比*/
     func downloadPercent(_ url: String) -> Double {
         let percent = progressPlist[url] as? Double

@@ -18,7 +18,6 @@ class LPEmotion: NSObject {
     var image: String? {
         didSet {
             imgPath = Bundle.main.bundlePath + "/Expression.bundle/" + image! + ".png"
-            
         }
     }
     
@@ -30,10 +29,11 @@ class LPEmotion: NSObject {
         isRemove = remove
     }
 
-    init(dict: [String : String]) {
+     init(dict: [String : String]) {
         super.init()
-        text = dict["text"]
-        image = dict["image"]
+        self.text = dict["text"]
+        self.image = dict["image"]
+        imgPath = Bundle.main.bundlePath + "/Expression.bundle/" + image! + ".png"
     }
     
 }

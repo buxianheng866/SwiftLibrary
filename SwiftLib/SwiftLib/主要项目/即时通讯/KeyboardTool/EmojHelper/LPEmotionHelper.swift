@@ -11,15 +11,21 @@ import UIKit
 class LPEmotionHelper {
     
     // 获取所有Plist
+
+    
     class func getAllEmotions() -> [LPEmotion] {
         var dataSource = [LPEmotion]()
         let plistPath = Bundle.main.path(forResource: "Expression", ofType: "plist")
         let array = NSArray(contentsOfFile: plistPath!) as! [[String : String]]
         
-        for (index, item) in array.enumerated() {
+        var index = 0
+        
+        for (_ , item) in array.enumerated() {
             dataSource.append(LPEmotion(dict: item))
-            if index % 23 == 0 {
+            index += 1
+            if index == 23 {
                 dataSource.append(LPEmotion(remove: true))
+                index = 0
             }
         }
         dataSource = addEmpty(dataSource: dataSource)
@@ -28,14 +34,14 @@ class LPEmotionHelper {
     
     fileprivate class func addEmpty(dataSource: [LPEmotion]) -> [LPEmotion] {
         var emos = dataSource
-        
         let count = dataSource.count % 24
-        if count != 0 {
-            for _ in count..<23 {
-                emos.append(LPEmotion(empty: true))
-            }
-            emos.append(LPEmotion(remove: true))
+        if count == 0 {
+            return emos
         }
+        for _ in count..<23 {
+            emos.append(LPEmotion(empty: true))
+        }
+        emos.append(LPEmotion(remove: true))
         return emos
     }
 }

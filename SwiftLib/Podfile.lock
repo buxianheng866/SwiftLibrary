@@ -4,6 +4,7 @@ PODS:
   - LFLiveKit (2.6)
   - NIMSDK (4.3.0)
   - SnapKit (4.0.0)
+  - SVProgressHUD (2.2.2)
   - SwiftDate (4.4.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - LFLiveKit
   - NIMSDK
   - SnapKit
+  - SVProgressHUD
   - SwiftDate
   - YYKit
 
@@ -24,9 +26,10 @@ SPEC CHECKSUMS:
   LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   NIMSDK: 4c7d69e30a1d7a45df07af3d28b87810510f6987
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   SwiftDate: a70a534d4feed03b2a2b575e36bef82dc2286a8d
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 2b5b76a7d73d1849fc891e6fe4f8559650c60317
+PODFILE CHECKSUM: 21badc4b712906625224cb8526c102466f9041af
 
 COCOAPODS: 1.4.0.beta.2

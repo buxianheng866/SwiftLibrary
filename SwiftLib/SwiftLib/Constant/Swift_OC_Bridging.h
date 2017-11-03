@@ -14,5 +14,6 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <NIMSDK/NIMSDK.h>
 #import <YYKit/YYKit.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 #endif /* Swift_OC_Bridging_h */
 

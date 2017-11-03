@@ -18,9 +18,11 @@ let kLineGrayColor = normalRGBA(r: 188.0, g: 188.0, b: 188.0, a: 0.6)
 
 // 键盘尺寸
 let kChatKeyboardBgColor = RGBA(r: 0.96, g: 0.96, b: 0.96, a: 1.0)
-let kChatBarOriginHeight = 49.0 // 工具条高度
-let kTextViewMaxHeight = 100    // 聊天框最大高度
+let kChatBarOriginHeight: CGFloat = 49.0 // 工具条高度
+let kTextViewMaxHeight: CGFloat = 100    // 聊天框最大高度
 let kTextViewMinHeiht = kChatBarOriginHeight - 14.0 // 聊天框最小高度
+let kNoTextKeyboardHeight: CGFloat = 216.0
+let kSplitLineColor = RGBA(r: 0.78, g: 0.78, b: 0.80, a: 1.00)
 
 // 键盘类型
 enum ChatKeyboardType: Int {

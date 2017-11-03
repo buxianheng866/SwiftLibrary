@@ -21,23 +21,29 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        xibView.frame = CGRect(x: 0, y: 50, width: mScreenW, height: 200)
-        self.view.addSubview(xibView)
-
-        let lab = LPTagView.obatainAttributed { (maker) in
-            
-        }
-        lab.backgroundColor = UIColor.cyan
-        self.view.addSubview(lab)
+//        xibView.frame = CGRect(x: 0, y: 50, width: mScreenW, height: 200)
+//        self.view.addSubview(xibView)
+//
+//        let lab = LPTagView.obatainAttributed { (maker) in
+//
+//        }
+//        lab.backgroundColor = UIColor.cyan
+//        self.view.addSubview(lab)
 
         
+        let emjView = LPEmotionView(frame: CGRect(x: 0, y: 200, width: mScreenW, height: kNoTextKeyboardHeight))
+        self.view.addSubview(emjView)
         
         
     }
     
     @IBAction func selectedAct(_ sender: Any) {
-        
-  
+       
+    }
+    
+    @IBAction func godownload(_ sender: Any) {
+        let download = DownloadController()
+        self.navigationController?.pushViewController(download, animated: true)
         
     }
     

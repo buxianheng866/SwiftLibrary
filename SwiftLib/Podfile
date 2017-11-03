@@ -10,5 +10,6 @@ pod 'SnapKit'
 pod 'Kingfisher'
 pod 'LFLiveKit'
 pod 'SwiftDate'
+pod 'SVProgressHUD'
 end
 

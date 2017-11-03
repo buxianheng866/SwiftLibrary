@@ -23,12 +23,18 @@
 		7D179DAB1FA02AA0008F4B97 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAA1FA02AA0008F4B97 /* libbz2.tbd */; };
 		7D179DAD1FA02AAB008F4B97 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAC1FA02AAB008F4B97 /* libz.tbd */; };
 		7D179DB11FA073EC008F4B97 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D179DB01FA073EC008F4B97 /* Date+Extension.swift */; };
+		7D5A9B451FAB18A600A70DB0 /* LPKeyboardMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A9B441FAB18A600A70DB0 /* LPKeyboardMoreView.swift */; };
 		7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D071FA082F2008C1F75 /* LPPlayerController.swift */; };
 		7D5C2D0A1FA082F2008C1F75 /* LPPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C2D081FA082F2008C1F75 /* LPPlayerController.xib */; };
 		7D5C2D0D1FA08437008C1F75 /* LiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D0B1FA08437008C1F75 /* LiveListCell.swift */; };
 		7D5C2D0E1FA08437008C1F75 /* LiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C2D0C1FA08437008C1F75 /* LiveListCell.xib */; };
 		7D5C2D101FA0848E008C1F75 /* LPLiveListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D0F1FA0848E008C1F75 /* LPLiveListController.swift */; };
 		7D5C2D121FA08DC4008C1F75 /* SnapkitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D111FA08DC4008C1F75 /* SnapkitDemo.swift */; };
+		7D6085AA1FAC13F7001E954D /* DownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6085A81FAC13F7001E954D /* DownloadController.swift */; };
+		7D6085AB1FAC13F7001E954D /* DownloadController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6085A91FAC13F7001E954D /* DownloadController.xib */; };
+		7D6085AE1FAC1608001E954D /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6085AC1FAC1608001E954D /* DownloadCell.swift */; };
+		7D6085AF1FAC1608001E954D /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6085AD1FAC1608001E954D /* DownloadCell.xib */; };
+		7D6085B11FAC6174001E954D /* SVProgressHUDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6085B01FAC6174001E954D /* SVProgressHUDTool.swift */; };
 		7D6314001FA09A8E00084BB2 /* LivelistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6313FF1FA09A8E00084BB2 /* LivelistModel.swift */; };
 		7D6B127E1FA854D400E33B82 /* LPEmotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B127D1FA854D400E33B82 /* LPEmotionHelper.swift */; };
 		7D6B12801FA862A300E33B82 /* EmotionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */; };
@@ -36,7 +42,6 @@
 		7D6B12841FA86DB100E33B82 /* LPEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */; };
 		7D70A5FE1FA716B900BA18E9 /* IMCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A5FD1FA716B900BA18E9 /* IMCommon.swift */; };
 		7D70A6011FA7196200BA18E9 /* LPChatBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6001FA7196200BA18E9 /* LPChatBarController.swift */; };
-		7D70A6031FA71AE900BA18E9 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6021FA71AE900BA18E9 /* UITextView+Extension.swift */; };
 		7D70A6051FA71F3A00BA18E9 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6041FA71F3A00BA18E9 /* AppDelegate+Extension.swift */; };
 		7D70A6071FA7209300BA18E9 /* IMSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6061FA7209300BA18E9 /* IMSDKManager.swift */; };
 		7D70A6091FA7211700BA18E9 /* LPChatBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */; };
@@ -94,12 +99,18 @@
 		7D57C25D1FA1BB10007D1DB5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7D57C25E1FA1BB1B007D1DB5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7D57C25F1FA1BB21007D1DB5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7D5A9B441FAB18A600A70DB0 /* LPKeyboardMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPKeyboardMoreView.swift; sourceTree = "<group>"; };
 		7D5C2D071FA082F2008C1F75 /* LPPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPPlayerController.swift; sourceTree = "<group>"; };
 		7D5C2D081FA082F2008C1F75 /* LPPlayerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPPlayerController.xib; sourceTree = "<group>"; };
 		7D5C2D0B1FA08437008C1F75 /* LiveListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListCell.swift; sourceTree = "<group>"; };
 		7D5C2D0C1FA08437008C1F75 /* LiveListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveListCell.xib; sourceTree = "<group>"; };
 		7D5C2D0F1FA0848E008C1F75 /* LPLiveListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPLiveListController.swift; sourceTree = "<group>"; };
 		7D5C2D111FA08DC4008C1F75 /* SnapkitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapkitDemo.swift; sourceTree = "<group>"; };
+		7D6085A81FAC13F7001E954D /* DownloadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadController.swift; sourceTree = "<group>"; };
+		7D6085A91FAC13F7001E954D /* DownloadController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadController.xib; sourceTree = "<group>"; };
+		7D6085AC1FAC1608001E954D /* DownloadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCell.swift; sourceTree = "<group>"; };
+		7D6085AD1FAC1608001E954D /* DownloadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadCell.xib; sourceTree = "<group>"; };
+		7D6085B01FAC6174001E954D /* SVProgressHUDTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUDTool.swift; sourceTree = "<group>"; };
 		7D6313FF1FA09A8E00084BB2 /* LivelistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivelistModel.swift; sourceTree = "<group>"; };
 		7D6B127D1FA854D400E33B82 /* LPEmotionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPEmotionHelper.swift; sourceTree = "<group>"; };
 		7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAttachment.swift; sourceTree = "<group>"; };
@@ -107,7 +118,6 @@
 		7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPEmotionView.swift; sourceTree = "<group>"; };
 		7D70A5FD1FA716B900BA18E9 /* IMCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCommon.swift; sourceTree = "<group>"; };
 		7D70A6001FA7196200BA18E9 /* LPChatBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatBarController.swift; sourceTree = "<group>"; };
-		7D70A6021FA71AE900BA18E9 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		7D70A6041FA71F3A00BA18E9 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		7D70A6061FA7209300BA18E9 /* IMSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMSDKManager.swift; sourceTree = "<group>"; };
 		7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatBarView.swift; sourceTree = "<group>"; };
@@ -158,6 +168,7 @@
 		7D0818A81F9F3CBA0084A140 /* 主要项目 */ = {
 			isa = PBXGroup;
 			children = (
+				7D6085A71FAC13D0001E954D /* 下载页面 */,
 				7DDFCE281FA96A76001463F2 /* YYKit + JsonEncoder */,
 				7D70A5FC1FA716A200BA18E9 /* 即时通讯 */,
 				7D0818A91F9F3CDD0084A140 /* 推拉流 */,
@@ -237,6 +248,7 @@
 				7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */,
 				7D5C2D111FA08DC4008C1F75 /* SnapkitDemo.swift */,
 				7D8298E91FA3345A00FDA8D9 /* SwiftDateHelper.swift */,
+				7D6085B01FAC6174001E954D /* SVProgressHUDTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -280,6 +292,17 @@
 			path = SwiftJson;
 			sourceTree = "<group>";
 		};
+		7D6085A71FAC13D0001E954D /* 下载页面 */ = {
+			isa = PBXGroup;
+			children = (
+				7D6085A81FAC13F7001E954D /* DownloadController.swift */,
+				7D6085A91FAC13F7001E954D /* DownloadController.xib */,
+				7D6085AC1FAC1608001E954D /* DownloadCell.swift */,
+				7D6085AD1FAC1608001E954D /* DownloadCell.xib */,
+			);
+			path = "下载页面";
+			sourceTree = "<group>";
+		};
 		7D70A5FC1FA716A200BA18E9 /* 即时通讯 */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,7 +318,7 @@
 			children = (
 				7D70A6001FA7196200BA18E9 /* LPChatBarController.swift */,
 				7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */,
-				7D70A6021FA71AE900BA18E9 /* UITextView+Extension.swift */,
+				7D5A9B441FAB18A600A70DB0 /* LPKeyboardMoreView.swift */,
 				7D70A60A1FA7264D00BA18E9 /* EmojHelper */,
 			);
 			path = KeyboardTool;
@@ -440,8 +463,10 @@
 				7DFC9A171FA31BCB009FF4B0 /* Expression.bundle in Resources */,
 				7D0818B11F9F40770084A140 /* LPLiveStreamController.xib in Resources */,
 				7DB86DB51F99EA3300402BA9 /* LPDownloadView.xib in Resources */,
+				7D6085AF1FAC1608001E954D /* DownloadCell.xib in Resources */,
 				7DF434851F90BFB2006D5698 /* XibNormalView.xib in Resources */,
 				7D5C2D0E1FA08437008C1F75 /* LiveListCell.xib in Resources */,
+				7D6085AB1FAC13F7001E954D /* DownloadController.xib in Resources */,
 				7D5C2D0A1FA082F2008C1F75 /* LPPlayerController.xib in Resources */,
 				7D085C871F8F48C7006CA52C /* Assets.xcassets in Resources */,
 				7D085C851F8F48C7006CA52C /* Main.storyboard in Resources */,
@@ -497,6 +522,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LFLiveKit/LFLiveKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
@@ -506,6 +532,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLiveKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
@@ -528,6 +555,7 @@
 				7D5C2D0D1FA08437008C1F75 /* LiveListCell.swift in Sources */,
 				7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */,
 				7DDFCE2C1FA96CEB001463F2 /* ConvertModelData.swift in Sources */,
+				7D5A9B451FAB18A600A70DB0 /* LPKeyboardMoreView.swift in Sources */,
 				7DE2FBF01F988A0B0028506D /* RequestManager.swift in Sources */,
 				7D0818B01F9F40770084A140 /* LPLiveStreamController.swift in Sources */,
 				7D085CD21F8F61EB006CA52C /* Macros.swift in Sources */,
@@ -541,13 +569,14 @@
 				7D085CDB1F8F7589006CA52C /* UIColor+Extension.swift in Sources */,
 				7D085CD91F8F6425006CA52C /* SwiftyJSON.swift in Sources */,
 				7D6B12841FA86DB100E33B82 /* LPEmotionView.swift in Sources */,
-				7D70A6031FA71AE900BA18E9 /* UITextView+Extension.swift in Sources */,
 				7DB86DAF1F999ED500402BA9 /* GenalNotes.swift in Sources */,
+				7D6085B11FAC6174001E954D /* SVProgressHUDTool.swift in Sources */,
 				7D085C801F8F48C7006CA52C /* AppDelegate.swift in Sources */,
 				7D5C2D101FA0848E008C1F75 /* LPLiveListController.swift in Sources */,
 				7D70A6011FA7196200BA18E9 /* LPChatBarController.swift in Sources */,
 				7D5C2D121FA08DC4008C1F75 /* SnapkitDemo.swift in Sources */,
 				7D8298EA1FA3345A00FDA8D9 /* SwiftDateHelper.swift in Sources */,
+				7D6085AE1FAC1608001E954D /* DownloadCell.swift in Sources */,
 				7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */,
 				7DF434811F90BF83006D5698 /* XibNormalView.swift in Sources */,
 				7D6314001FA09A8E00084BB2 /* LivelistModel.swift in Sources */,
@@ -561,6 +590,7 @@
 				7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */,
 				7DFC9A1A1FA31C07009FF4B0 /* UIView+Extension.swift in Sources */,
 				7DE2FBF21F988A410028506D /* DownloadManager.swift in Sources */,
+				7D6085AA1FAC13F7001E954D /* DownloadController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
