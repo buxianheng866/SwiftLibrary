@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    
+    /*
     public var x: CGFloat {
         get {
             return self.frame.origin.x
@@ -114,7 +114,7 @@ extension UIView {
             self.center = CGPoint(x: self.centerX, y: newValue)
         }
     }
-    
+ */
 }
 
 

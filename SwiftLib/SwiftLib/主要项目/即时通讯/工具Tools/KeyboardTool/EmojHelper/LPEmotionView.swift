@@ -56,8 +56,6 @@ class LPEmotionView: UIView {
     
     lazy var pageControl: UIPageControl = {
         let page = UIPageControl()
-        
-    
         page.numberOfPages =  self.emotions.count / kAllNumerOfPage + (self.emotions.count % kAllNumerOfPage == 0 ? 0 : 1)
         page.currentPage = 0
         page.pageIndicatorTintColor = UIColor.orange
@@ -139,12 +137,11 @@ extension LPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource, U
         let emoj = self.emotions[indexPath.row]
         if emoj.isEmpty {
             return
-        } else if emoj.isRemove {
-            
         } else {
-            
+            if selectEmotionBlock != nil {
+               selectEmotionBlock!(self, emoj)
+            }
         }
-        
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.emotions.count

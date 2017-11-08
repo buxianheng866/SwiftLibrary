@@ -10,5 +10,8 @@ import Foundation
 
 class IMSDKManager {
     static let `default` = IMSDKManager()
+}
+
+extension IMSDKManager {
     
 }

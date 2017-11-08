@@ -38,7 +38,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func selectedAct(_ sender: Any) {
-       
+        let chat = LPChatBarController()
+        self.navigationController?.pushViewController(chat, animated: true)
     }
     
     @IBAction func godownload(_ sender: Any) {

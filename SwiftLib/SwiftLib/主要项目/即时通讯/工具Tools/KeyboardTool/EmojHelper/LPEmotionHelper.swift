@@ -53,7 +53,7 @@ extension LPEmotionHelper {
         guard let regex = try? NSRegularExpression(pattern: pattern, options: []) else {
             return nil
         }
-        let resutlts = regex.matches(in: text, options: [], range: NSMakeRange(0, text.characters.count))
+        let resutlts = regex.matches(in: text, options: [], range: NSMakeRange(0, text.count))
         let attrMStr = NSMutableAttributedString(string: text, attributes: [NSAttributedStringKey.font: font])
         
         for (_, result) in resutlts.enumerated().reversed() {

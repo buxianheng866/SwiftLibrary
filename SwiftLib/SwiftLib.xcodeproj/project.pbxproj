@@ -23,6 +23,7 @@
 		7D179DAB1FA02AA0008F4B97 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAA1FA02AA0008F4B97 /* libbz2.tbd */; };
 		7D179DAD1FA02AAB008F4B97 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAC1FA02AAB008F4B97 /* libz.tbd */; };
 		7D179DB11FA073EC008F4B97 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D179DB01FA073EC008F4B97 /* Date+Extension.swift */; };
+		7D57B9511FB04C1F00CF54E6 /* LPChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D57B9501FB04C1F00CF54E6 /* LPChatViewController.swift */; };
 		7D5A9B451FAB18A600A70DB0 /* LPKeyboardMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A9B441FAB18A600A70DB0 /* LPKeyboardMoreView.swift */; };
 		7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D071FA082F2008C1F75 /* LPPlayerController.swift */; };
 		7D5C2D0A1FA082F2008C1F75 /* LPPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C2D081FA082F2008C1F75 /* LPPlayerController.xib */; };
@@ -91,6 +92,7 @@
 		7D179DB01FA073EC008F4B97 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		7D24C01F1FA1CAFE00D81359 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7D24C0201FA1CB0B00D81359 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7D57B9501FB04C1F00CF54E6 /* LPChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatViewController.swift; sourceTree = "<group>"; };
 		7D57C2561FA1BA78007D1DB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7D57C2571FA1BA9C007D1DB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7D57C2581FA1BAB0007D1DB5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -292,6 +294,30 @@
 			path = SwiftJson;
 			sourceTree = "<group>";
 		};
+		7D57B94D1FB04B5F00CF54E6 /* MainSection主要界面 */ = {
+			isa = PBXGroup;
+			children = (
+				7D57B94F1FB04BDD00CF54E6 /* ChatUI聊天页面 */,
+			);
+			path = "MainSection主要界面";
+			sourceTree = "<group>";
+		};
+		7D57B94E1FB04BC000CF54E6 /* 工具Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7D70A5FF1FA716EB00BA18E9 /* KeyboardTool */,
+			);
+			path = "工具Tools";
+			sourceTree = "<group>";
+		};
+		7D57B94F1FB04BDD00CF54E6 /* ChatUI聊天页面 */ = {
+			isa = PBXGroup;
+			children = (
+				7D57B9501FB04C1F00CF54E6 /* LPChatViewController.swift */,
+			);
+			path = "ChatUI聊天页面";
+			sourceTree = "<group>";
+		};
 		7D6085A71FAC13D0001E954D /* 下载页面 */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,9 +332,10 @@
 		7D70A5FC1FA716A200BA18E9 /* 即时通讯 */ = {
 			isa = PBXGroup;
 			children = (
+				7D57B94D1FB04B5F00CF54E6 /* MainSection主要界面 */,
+				7D57B94E1FB04BC000CF54E6 /* 工具Tools */,
 				7D70A5FD1FA716B900BA18E9 /* IMCommon.swift */,
 				7D70A6061FA7209300BA18E9 /* IMSDKManager.swift */,
-				7D70A5FF1FA716EB00BA18E9 /* KeyboardTool */,
 			);
 			path = "即时通讯";
 			sourceTree = "<group>";
@@ -589,6 +616,7 @@
 				7DD534AE1FA9A43A00784C1A /* UseYYKit.swift in Sources */,
 				7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */,
 				7DFC9A1A1FA31C07009FF4B0 /* UIView+Extension.swift in Sources */,
+				7D57B9511FB04C1F00CF54E6 /* LPChatViewController.swift in Sources */,
 				7DE2FBF21F988A410028506D /* DownloadManager.swift in Sources */,
 				7D6085AA1FAC13F7001E954D /* DownloadController.swift in Sources */,
 			);

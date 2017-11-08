@@ -32,20 +32,25 @@ func printLog<T>(_ message: T, file: String = #file, funcName: String = #functio
 
 
 
+let kNavBarColor = UIColor.orange
 
 let mScreenH = UIScreen.main.bounds.height
 
 let mScreenW = UIScreen.main.bounds.width
 
-let kSafeAreaInset = UIApplication.shared.delegate?.window??.safeAreaInsets ?? UIEdgeInsets.zero
+let statusBarFrame = UIApplication.shared.statusBarFrame
 
+let kSafeAreaInset = UIApplication.shared.delegate?.window??.safeAreaInsets ?? UIEdgeInsets.zero
 
 let isPhoneX = UIScreen.main.currentMode?.size.height == 2436
 
-let kNavBarColor = UIColor.orange
+let TopBarHeight = isPhoneX ? 88 : 64
+
+let BottomBarHeight = isPhoneX ? 83 : 49 //底部有tabbar高度
+
+let StatusBarHeight = isPhoneX ? 44 : 20 //状态栏高度
 
 let kApplication = UIApplication.shared
-
 
 let kGenalTextFont: CGFloat = 15
 
@@ -56,6 +61,7 @@ func normalRGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
 func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
     return UIColor (red: r, green: g, blue: b, alpha: a)
 }
+
 
 
 
