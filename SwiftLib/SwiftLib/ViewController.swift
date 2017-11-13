@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     lazy var xibView: LPDownloadView = {
         guard let xib = LPDownloadView.newInstance() else {
             return LPDownloadView()
@@ -18,27 +19,23 @@ class ViewController: UIViewController {
     }()
     
 
+    func ios11Later() {
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+            print(self.view.safeAreaInsets)
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        xibView.frame = CGRect(x: 0, y: 50, width: mScreenW, height: 200)
-//        self.view.addSubview(xibView)
-//
-//        let lab = LPTagView.obatainAttributed { (maker) in
-//
-//        }
-//        lab.backgroundColor = UIColor.cyan
-//        self.view.addSubview(lab)
 
-        
-        let emjView = LPEmotionView(frame: CGRect(x: 0, y: 200, width: mScreenW, height: kNoTextKeyboardHeight))
-        self.view.addSubview(emjView)
         
         
     }
     
     @IBAction func selectedAct(_ sender: Any) {
-        let chat = LPChatBarController()
+        let chat = LPChatViewController()
         self.navigationController?.pushViewController(chat, animated: true)
     }
     

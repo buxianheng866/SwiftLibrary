@@ -14,8 +14,8 @@ fileprivate let cellIdentifier = "emojCellIdentifier"
 
 class LPEmotionView: UIView {
 
-    var selectEmotionBlock: ((LPEmotionView,LPEmotion) -> ())?
-    var selectSendBlock: ((LPEmotionView) -> ())?
+    var selectEmotionBlock: ((LPEmotion) -> ())?
+    var selectSendBlock: (() -> ())?
     
     lazy var emotions: [LPEmotion] = {
         return LPEmotionHelper.getAllEmotions()
@@ -60,15 +60,14 @@ class LPEmotionView: UIView {
         page.currentPage = 0
         page.pageIndicatorTintColor = UIColor.orange
         page.currentPageIndicatorTintColor = UIColor.white
-        
-        page.backgroundColor = kChatKeyboardBgColor
+        page.backgroundColor = UIColor.clear
         return page
     }()
     
     lazy var collectionView: UICollectionView = {
        
         let collect = UICollectionView(frame: CGRect.zero, collectionViewLayout: LPHorizontalLayout(column: kNumberOfOneRow, row: kRow))
-        collect.backgroundColor = kChatKeyboardBgColor
+        collect.backgroundColor = UIColor.clear
         collect.register(EmotionCollectCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collect.showsVerticalScrollIndicator = true
         collect.showsHorizontalScrollIndicator = false
@@ -80,6 +79,7 @@ class LPEmotionView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        self.backgroundColor = kChatKeyboardBgColor
         self.addSubview(bottomView)
         self.addSubview(collectionView)
         self.addSubview(pageControl)
@@ -113,7 +113,6 @@ class LPEmotionView: UIView {
         }
     }
     
-    
 }
 extension LPEmotionView {
     @objc func addBtnAction(_ btn: UIButton) -> Void {
@@ -125,9 +124,8 @@ extension LPEmotionView {
     }
     
     @objc func sendBtnAction(_ btn: UIButton) -> Void {
-        printLog("发送")
         if selectSendBlock != nil {
-            selectSendBlock!(self)
+            selectSendBlock!()
         }
     }
 }
@@ -139,7 +137,7 @@ extension LPEmotionView: UICollectionViewDelegate, UICollectionViewDataSource, U
             return
         } else {
             if selectEmotionBlock != nil {
-               selectEmotionBlock!(self, emoj)
+               selectEmotionBlock!(emoj)
             }
         }
     }

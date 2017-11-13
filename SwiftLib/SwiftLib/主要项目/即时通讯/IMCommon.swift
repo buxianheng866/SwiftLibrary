@@ -21,17 +21,9 @@ let kChatKeyboardBgColor = normalRGBA(r: 237.0, g: 237.0, b: 246.0, a: 0.6)
 let kChatBarOriginHeight: CGFloat = 49.0 // 工具条高度
 let kTextViewMaxHeight: CGFloat = 110    // 聊天框最大高度
 let kTextViewMinHeight = kChatBarOriginHeight - 14.0 // 聊天框最小高度
-let kNoTextKeyboardHeight: CGFloat = 216.0
+let kCustomKeyboardViewHeight: CGFloat = 216.0
 let kSplitLineColor = RGBA(r: 0.78, g: 0.78, b: 0.80, a: 1.00)
-
-// 键盘类型
-enum ChatKeyboardType: Int {
-    case nothing
-    case voice
-    case text
-    case emoj
-    case more
-}
+let keyboardDuration = 0.25 // 键盘显示隐藏的动画时间
 
 
 
