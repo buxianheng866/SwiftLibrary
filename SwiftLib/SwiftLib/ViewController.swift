@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let ks = KBCustomAddView(frame: CGRect(x: 0, y: 150, width: mScreenW, height: 300))
+        self.view.addSubview(ks)
         
         
     }

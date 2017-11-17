@@ -34,7 +34,9 @@ class LPChatViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    var message = "whos your daddy"
+    
 }
 
 extension LPChatViewController {
@@ -44,7 +46,7 @@ extension LPChatViewController {
         keyboard.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
             make.bottom.equalTo(self.view.snp.bottom).offset(kCustomKeyboardViewHeight)
-            make.height.equalTo(kChatBarOriginHeight + kCustomKeyboardViewHeight + kSafeAreaInset.bottom)
+            make.height.equalTo(kOriginKeyboardHeight)
         }
         
         tableView.snp.makeConstraints { (make) in
@@ -55,8 +57,23 @@ extension LPChatViewController {
     }
 }
 
+extension LPChatViewController {
+    func scrollToBottom(animatied: Bool = false) -> Void {
+        self.view.layoutIfNeeded()
+        let indexPath = IndexPath(row: 19, section: 0)
+        self.tableView.scrollToRow(at: indexPath, at: .top, animated: animatied)
+    }
+}
+
+
 extension LPChatViewController: LPChatKeyboradDelegate {
-    
+    func sendMessage(messg: String) {
+        message = messg
+       self.tableView.reloadData()
+        printLog("message: \(messg)")
+        
+        self.scrollToBottom()
+    }
 }
 
 extension LPChatViewController: UITableViewDelegate, UITableViewDataSource {
@@ -66,11 +83,17 @@ extension LPChatViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellcell", for: indexPath)
-        cell.textLabel?.text = "whos your daddy"
+        
+        let attr = LPEmotionHelper.findAttrStr(text: message, font: UIFont.systemFont(ofSize: 15))
+        
+        cell.textLabel?.attributedText = attr!
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let _ = self.keyboard.resignFirstResponder()
     }
     
 }

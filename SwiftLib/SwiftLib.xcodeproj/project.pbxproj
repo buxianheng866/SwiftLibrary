@@ -24,6 +24,7 @@
 		7D179DAB1FA02AA0008F4B97 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAA1FA02AA0008F4B97 /* libbz2.tbd */; };
 		7D179DAD1FA02AAB008F4B97 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAC1FA02AAB008F4B97 /* libz.tbd */; };
 		7D179DB11FA073EC008F4B97 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D179DB01FA073EC008F4B97 /* Date+Extension.swift */; };
+		7D33089F1FBE8B3700846249 /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D33089E1FBE8B3700846249 /* UITextView+Extension.m */; };
 		7D57B9511FB04C1F00CF54E6 /* LPChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D57B9501FB04C1F00CF54E6 /* LPChatViewController.swift */; };
 		7D5A9B451FAB18A600A70DB0 /* LPKeyboardMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A9B441FAB18A600A70DB0 /* LPKeyboardMoreView.swift */; };
 		7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D071FA082F2008C1F75 /* LPPlayerController.swift */; };
@@ -55,6 +56,9 @@
 		7DB86DB11F99A5AD00402BA9 /* LPFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */; };
 		7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */; };
 		7DB86DB51F99EA3300402BA9 /* LPDownloadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DB86DB41F99EA3300402BA9 /* LPDownloadView.xib */; };
+		7DD3E8571FBEE41400B2B3F2 /* KBCustomBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3E8561FBEE41400B2B3F2 /* KBCustomBaseView.swift */; };
+		7DD3E8591FBEE6CD00B2B3F2 /* KBCustomEmojView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3E8581FBEE6CD00B2B3F2 /* KBCustomEmojView.swift */; };
+		7DD3E85B1FBEE70400B2B3F2 /* KBCustomAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3E85A1FBEE70400B2B3F2 /* KBCustomAddView.swift */; };
 		7DD534AE1FA9A43A00784C1A /* UseYYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD534AD1FA9A43A00784C1A /* UseYYKit.swift */; };
 		7DDA44691FB6D2930041EF5A /* ChatRecordHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA44681FB6D2930041EF5A /* ChatRecordHUD.swift */; };
 		7DDFCE2C1FA96CEB001463F2 /* ConvertModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDFCE2B1FA96CEB001463F2 /* ConvertModelData.swift */; };
@@ -96,6 +100,8 @@
 		7D179DB01FA073EC008F4B97 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		7D24C01F1FA1CAFE00D81359 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7D24C0201FA1CB0B00D81359 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7D33089D1FBE8B3700846249 /* UITextView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
+		7D33089E1FBE8B3700846249 /* UITextView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
 		7D57B9501FB04C1F00CF54E6 /* LPChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatViewController.swift; sourceTree = "<group>"; };
 		7D57C2561FA1BA78007D1DB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7D57C2571FA1BA9C007D1DB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +141,9 @@
 		7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPFileManager.swift; sourceTree = "<group>"; };
 		7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPDownloadView.swift; sourceTree = "<group>"; };
 		7DB86DB41F99EA3300402BA9 /* LPDownloadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPDownloadView.xib; sourceTree = "<group>"; };
+		7DD3E8561FBEE41400B2B3F2 /* KBCustomBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCustomBaseView.swift; sourceTree = "<group>"; };
+		7DD3E8581FBEE6CD00B2B3F2 /* KBCustomEmojView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCustomEmojView.swift; sourceTree = "<group>"; };
+		7DD3E85A1FBEE70400B2B3F2 /* KBCustomAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCustomAddView.swift; sourceTree = "<group>"; };
 		7DD534AD1FA9A43A00784C1A /* UseYYKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseYYKit.swift; sourceTree = "<group>"; };
 		7DDA44681FB6D2930041EF5A /* ChatRecordHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRecordHUD.swift; sourceTree = "<group>"; };
 		7DDFCE2B1FA96CEB001463F2 /* ConvertModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertModelData.swift; sourceTree = "<group>"; };
@@ -368,6 +377,11 @@
 				7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */,
 				7D6B12811FA8680800E33B82 /* UITextView+Extenstion.swift */,
 				7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */,
+				7D33089D1FBE8B3700846249 /* UITextView+Extension.h */,
+				7D33089E1FBE8B3700846249 /* UITextView+Extension.m */,
+				7DD3E8561FBEE41400B2B3F2 /* KBCustomBaseView.swift */,
+				7DD3E8581FBEE6CD00B2B3F2 /* KBCustomEmojView.swift */,
+				7DD3E85A1FBEE70400B2B3F2 /* KBCustomAddView.swift */,
 			);
 			path = EmojView;
 			sourceTree = "<group>";
@@ -587,6 +601,7 @@
 			files = (
 				7DA70D221F9093E9001CEE27 /* LPBaseViewController.swift in Sources */,
 				7D6B127E1FA854D400E33B82 /* LPEmotionHelper.swift in Sources */,
+				7DD3E8591FBEE6CD00B2B3F2 /* KBCustomEmojView.swift in Sources */,
 				7D6B12801FA862A300E33B82 /* EmotionAttachment.swift in Sources */,
 				7D5C2D0D1FA08437008C1F75 /* LiveListCell.swift in Sources */,
 				7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */,
@@ -603,8 +618,10 @@
 				7D085CD41F8F63E9006CA52C /* HttpRequest.swift in Sources */,
 				7D085C821F8F48C7006CA52C /* ViewController.swift in Sources */,
 				7D70A6051FA71F3A00BA18E9 /* AppDelegate+Extension.swift in Sources */,
+				7D33089F1FBE8B3700846249 /* UITextView+Extension.m in Sources */,
 				7D70A5FE1FA716B900BA18E9 /* IMCommon.swift in Sources */,
 				7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */,
+				7DD3E85B1FBEE70400B2B3F2 /* KBCustomAddView.swift in Sources */,
 				7D085CDB1F8F7589006CA52C /* UIColor+Extension.swift in Sources */,
 				7D085CD91F8F6425006CA52C /* SwiftyJSON.swift in Sources */,
 				7D6B12841FA86DB100E33B82 /* LPEmotionView.swift in Sources */,
@@ -631,6 +648,7 @@
 				7DF66B541FB59BAF00A7CC05 /* KeyboardBtn.swift in Sources */,
 				7DE2FBF21F988A410028506D /* DownloadManager.swift in Sources */,
 				7D6085AA1FAC13F7001E954D /* DownloadController.swift in Sources */,
+				7DD3E8571FBEE41400B2B3F2 /* KBCustomBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,7 +794,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G7V4WL43S4;
+				DEVELOPMENT_TEAM = DYC8577H8P;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftLib/Info.plist;
@@ -844,7 +862,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G7V4WL43S4;
+				DEVELOPMENT_TEAM = DYC8577H8P;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftLib/Info.plist;

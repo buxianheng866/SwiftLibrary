@@ -22,6 +22,9 @@ let kChatBarOriginHeight: CGFloat = 49.0 // 工具条高度
 let kTextViewMaxHeight: CGFloat = 110    // 聊天框最大高度
 let kTextViewMinHeight = kChatBarOriginHeight - 14.0 // 聊天框最小高度
 let kCustomKeyboardViewHeight: CGFloat = 216.0
+let kOriginKeyboardHeight = kChatBarOriginHeight + kCustomKeyboardViewHeight + kSafeAreaInset.bottom
+
+
 let kSplitLineColor = RGBA(r: 0.78, g: 0.78, b: 0.80, a: 1.00)
 let keyboardDuration = 0.25 // 键盘显示隐藏的动画时间
 

@@ -22,7 +22,7 @@ class ConvertModelData {
 //                    printLog("hahhahah")
 //                }
 //
-            let md = ModelData()
+            let _ = ModelData()
            
               printLog(value)
             default:

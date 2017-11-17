@@ -12,6 +12,7 @@ fileprivate let kRow = 3     // 共3行
 fileprivate let kAllNumerOfPage = kRow * kNumberOfOneRow //一页共多少
 fileprivate let cellIdentifier = "emojCellIdentifier"
 
+
 class LPEmotionView: UIView {
 
     var selectEmotionBlock: ((LPEmotion) -> ())?

@@ -11,6 +11,6 @@ import Foundation
 extension AppDelegate {
     func registerIMSDK() -> Void {
 //        let option = NIMSDKOption.init(appKey: IMappKey)
-        NIMSDK.shared().register(withAppID: IMappKey, cerName: nil)
+//        NIMSDK.shared().register(withAppID: IMappKey, cerName: nil)
     }
 }

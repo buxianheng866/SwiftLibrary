@@ -12,8 +12,10 @@
 #import <LFLiveKit/LFLiveKit.h>
 //#import <IJKMediaFramework/IJKMediaFramework.h>
 #import <CommonCrypto/CommonDigest.h>
-#import <NIMSDK/NIMSDK.h>
+//#import <NIMSDK/NIMSDK.h>
 #import <YYKit/YYKit.h>
 #import <SVProgressHUD/SVProgressHUD.h>
+
+#import "UITextView+Extension.h"
 #endif /* Swift_OC_Bridging_h */
 

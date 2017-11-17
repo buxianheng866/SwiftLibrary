@@ -19,12 +19,13 @@ enum ChatKeyboardType: Int {
     case more   // 更多键盘
 }
 
-protocol ChatKeyboardDelegate: NSObjectProtocol {
+protocol ChatBarDelegate: NSObjectProtocol {
     
     // 发送消息
-    func chatKeyBoardSendMessage(message: String)
+    func chatBarSendMessage()
     // 更新高度
     func chatBarUpdateHeight(height: CGFloat)
+    
     // 录音
     func chatBarStartRecord()
     func chatBarStopRecord()
@@ -35,7 +36,8 @@ protocol ChatKeyboardDelegate: NSObjectProtocol {
     func chatBarSelectMoreBtn()
     func chatBarSelectEmojBtn()
     func chatBarSelectVoiceBtn()
-    func chatBarSelectText()
+    
+    func normalKeyboardState()
 }
 class LPChatBarView: UIView {
 
@@ -49,9 +51,9 @@ class LPChatBarView: UIView {
                 self.voiceBtn.isSelected = false
                 self.moreBtn.isSelected = false
                 
-                keyBoardDelegate?.chatBarSelectEmojBtn()
+                chatBarDelegate?.chatBarSelectEmojBtn()
                 if currentHeight != kChatBarOriginHeight {
-                    keyBoardDelegate?.chatBarUpdateHeight(height: currentHeight)
+                    chatBarDelegate?.chatBarUpdateHeight(height: currentHeight)
                 }
                 
             case .text:
@@ -62,11 +64,6 @@ class LPChatBarView: UIView {
                 self.voiceBtn.isSelected = false
                 self.moreBtn.isSelected = false
                 
-                keyBoardDelegate?.chatBarSelectText()
-                if currentHeight != kChatBarOriginHeight {
-                    keyBoardDelegate?.chatBarUpdateHeight(height: currentHeight)
-                }
-
             case .voice:
                 self.recordBtn.isHidden = false
                 self.inputTextView.isHidden = true
@@ -74,10 +71,7 @@ class LPChatBarView: UIView {
                 self.emojBtn.isSelected = false
                 self.moreBtn.isSelected = false
                 
-                keyBoardDelegate?.chatBarSelectVoiceBtn()
-                if currentHeight != kChatBarOriginHeight {
-                    keyBoardDelegate?.chatBarUpdateHeight(height: kChatBarOriginHeight)
-                }
+                chatBarDelegate?.chatBarSelectVoiceBtn()
             case .more:
                 self.inputTextView.isHidden = false
                 self.recordBtn.isHidden = true
@@ -85,20 +79,17 @@ class LPChatBarView: UIView {
                 self.voiceBtn.isSelected = false
                 self.emojBtn.isSelected = false
                 
-                keyBoardDelegate?.chatBarSelectMoreBtn()
+                chatBarDelegate?.chatBarSelectMoreBtn()
                 if currentHeight != kChatBarOriginHeight {
-                    keyBoardDelegate?.chatBarUpdateHeight(height: currentHeight)
+                    chatBarDelegate?.chatBarUpdateHeight(height: currentHeight)
                 }
 
             case .normal:
-                self.recordBtn.isHidden = true
-                self.inputTextView.isHidden = false
         
                 voiceBtn.isSelected = false
                 emojBtn.isSelected = false
                 moreBtn.isSelected = false
-                
-                keyBoardDelegate?.chatBarUpdateHeight(height: kChatBarOriginHeight)
+
             default:
                 print(keybordType)
             }
@@ -107,9 +98,9 @@ class LPChatBarView: UIView {
         }
     }
     
-    weak var keyBoardDelegate: ChatKeyboardDelegate?
+    weak var chatBarDelegate: ChatBarDelegate?
 
-    fileprivate var currentHeight: CGFloat = kChatBarOriginHeight
+    var currentHeight: CGFloat = kChatBarOriginHeight
     
     fileprivate lazy var voiceBtn: KeyboardBtn = {
         return self.obtaionBtn(aImg: #imageLiteral(resourceName: "ToolViewInputVoice"), bImg: #imageLiteral(resourceName: "ToolViewInputVoiceHL"))
@@ -143,7 +134,7 @@ class LPChatBarView: UIView {
         return btn
     }()
     
-    fileprivate lazy var inputTextView: UITextView = {
+    lazy var inputTextView: UITextView = {
         let text = UITextView()
         text.font = UIFont.systemFont(ofSize: 15)
         text.textColor = UIColor.black
@@ -185,39 +176,47 @@ extension LPChatBarView {
         }
     }
     @objc fileprivate func recordBtnDown() -> Void {
-        keyBoardDelegate?.chatBarStopRecord()
+        chatBarDelegate?.chatBarStopRecord()
     }
     
     @objc fileprivate func recordBtnUpInside() -> Void {
-        keyBoardDelegate?.chatBarStopRecord()
+        chatBarDelegate?.chatBarStopRecord()
     }
     
     @objc fileprivate func recordBtnUpOutSide() -> Void {
-        keyBoardDelegate?.chatBarCancelRecord()
+        chatBarDelegate?.chatBarCancelRecord()
     }
     
     @objc fileprivate func recordBtnDragOutSide() -> Void {
-        keyBoardDelegate?.chatBarDragInside(inside: false)
+        chatBarDelegate?.chatBarDragInside(inside: false)
     }
     
     @objc fileprivate func recordBtnDragInSide() -> Void {
-        keyBoardDelegate?.chatBarDragInside(inside: true)
+        chatBarDelegate?.chatBarDragInside(inside: true)
     }
     
     override func resignFirstResponder() -> Bool {
-        self.inputTextView.resignFirstResponder()
-        keybordType = .normal
+        self.resignResponder()
+        if keybordType != .normal && keybordType != .voice {
+            keybordType = .normal
+            chatBarDelegate?.normalKeyboardState()
+        }
         return super.resignFirstResponder()
     }
     
-    func becomeResponder() -> Void {
+    private func becomeResponder() -> Void {
         self.inputTextView.becomeFirstResponder()
     }
     
-    func resignResponder() -> Void {
+    private func resignResponder() -> Void {
         if inputTextView.isFirstResponder {
              self.inputTextView.resignFirstResponder()
         }
+        
+    }
+    func chatBarTextViewRestore() {
+        inputTextView.text = ""
+        textViewDidChange(inputTextView)
     }
     
 
@@ -297,13 +296,17 @@ extension LPChatBarView {
 extension LPChatBarView: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
-            printLog("发送")
             let mesg = textView.getEmotionString()
             if !mesg.isEmpty {
-                keyBoardDelegate?.chatKeyBoardSendMessage(message: mesg)
-                textView.text = ""
+                chatBarDelegate?.chatBarSendMessage()
             }
             return false
+        } else if text == "" && range.length == 1 {
+            
+            let _ = textView.onTextDeleteisEmo(false, block: {
+                
+            })
+            
         }
         return true
     }
@@ -314,10 +317,10 @@ extension LPChatBarView: UITextViewDelegate {
         fixH = fixH > kTextViewMinHeight ? fixH : kTextViewMinHeight
         fixH = fixH < kTextViewMaxHeight ? fixH : kTextViewMaxHeight
         currentHeight = fixH + kChatBarOriginHeight - kTextViewMinHeight
-      
+ 
         if currentHeight != textView.height {
             UIView.animate(withDuration: 0.05, animations: {
-                self.keyBoardDelegate?.chatBarUpdateHeight(height: self.currentHeight)
+                self.chatBarDelegate?.chatBarUpdateHeight(height: self.currentHeight)
             })
         }
         textView.scrollToBottom(animated: false)

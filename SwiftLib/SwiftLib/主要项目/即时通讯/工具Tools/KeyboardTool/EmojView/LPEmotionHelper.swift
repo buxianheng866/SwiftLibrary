@@ -49,7 +49,7 @@ class LPEmotionHelper {
 extension LPEmotionHelper {
     // MARK:- 查找属性字符串的方法
     class func findAttrStr(text: String, font: UIFont) -> NSMutableAttributedString? {
-        let pattern = "\\[.*?\\]" // 匹配表情
+        let pattern = "\\[[a-zA-Z0-9\\/\\u4e00-\\u9fa5]+\\]" // 匹配表情
         guard let regex = try? NSRegularExpression(pattern: pattern, options: []) else {
             return nil
         }
