@@ -21,12 +21,11 @@
 		7D085CD91F8F6425006CA52C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D085CD81F8F6425006CA52C /* SwiftyJSON.swift */; };
 		7D085CDB1F8F7589006CA52C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D085CDA1F8F7589006CA52C /* UIColor+Extension.swift */; };
 		7D085CDD1F8F7605006CA52C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D085CDC1F8F7605006CA52C /* String+Extension.swift */; };
+		7D0FF4641FC2AD92008AE490 /* LPAddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0FF4631FC2AD92008AE490 /* LPAddModel.swift */; };
+		7D1114AB1FC3CA59001A6B53 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1114AA1FC3CA59001A6B53 /* UITextField+Extension.swift */; };
 		7D179DAB1FA02AA0008F4B97 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAA1FA02AA0008F4B97 /* libbz2.tbd */; };
 		7D179DAD1FA02AAB008F4B97 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D179DAC1FA02AAB008F4B97 /* libz.tbd */; };
 		7D179DB11FA073EC008F4B97 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D179DB01FA073EC008F4B97 /* Date+Extension.swift */; };
-		7D33089F1FBE8B3700846249 /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D33089E1FBE8B3700846249 /* UITextView+Extension.m */; };
-		7D57B9511FB04C1F00CF54E6 /* LPChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D57B9501FB04C1F00CF54E6 /* LPChatViewController.swift */; };
-		7D5A9B451FAB18A600A70DB0 /* LPKeyboardMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A9B441FAB18A600A70DB0 /* LPKeyboardMoreView.swift */; };
 		7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D071FA082F2008C1F75 /* LPPlayerController.swift */; };
 		7D5C2D0A1FA082F2008C1F75 /* LPPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5C2D081FA082F2008C1F75 /* LPPlayerController.xib */; };
 		7D5C2D0D1FA08437008C1F75 /* LiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C2D0B1FA08437008C1F75 /* LiveListCell.swift */; };
@@ -39,19 +38,31 @@
 		7D6085AF1FAC1608001E954D /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6085AD1FAC1608001E954D /* DownloadCell.xib */; };
 		7D6085B11FAC6174001E954D /* SVProgressHUDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6085B01FAC6174001E954D /* SVProgressHUDTool.swift */; };
 		7D6314001FA09A8E00084BB2 /* LivelistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6313FF1FA09A8E00084BB2 /* LivelistModel.swift */; };
-		7D6B127E1FA854D400E33B82 /* LPEmotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B127D1FA854D400E33B82 /* LPEmotionHelper.swift */; };
 		7D6B12801FA862A300E33B82 /* EmotionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */; };
 		7D6B12821FA8680800E33B82 /* UITextView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B12811FA8680800E33B82 /* UITextView+Extenstion.swift */; };
-		7D6B12841FA86DB100E33B82 /* LPEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */; };
 		7D70A5FE1FA716B900BA18E9 /* IMCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A5FD1FA716B900BA18E9 /* IMCommon.swift */; };
 		7D70A6051FA71F3A00BA18E9 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6041FA71F3A00BA18E9 /* AppDelegate+Extension.swift */; };
 		7D70A6071FA7209300BA18E9 /* IMSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6061FA7209300BA18E9 /* IMSDKManager.swift */; };
 		7D70A6091FA7211700BA18E9 /* LPChatBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */; };
 		7D70A60D1FA7268900BA18E9 /* LPEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70A60C1FA7268900BA18E9 /* LPEmotion.swift */; };
+		7D779D2A1FC51D4E006A59D7 /* CustomEmoj.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D779D281FC51D4E006A59D7 /* CustomEmoj.plist */; };
+		7D779D2C1FC58843006A59D7 /* ChatBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D779D2B1FC58843006A59D7 /* ChatBarHelper.swift */; };
 		7D8298EA1FA3345A00FDA8D9 /* SwiftDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8298E91FA3345A00FDA8D9 /* SwiftDateHelper.swift */; };
+		7D96DFAC1FC90AF30033772E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFAB1FC90AF30033772E /* ChatViewController.swift */; };
+		7D96DFB01FC90CF10033772E /* ChatVC+Deleagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFAF1FC90CF10033772E /* ChatVC+Deleagate.swift */; };
+		7D96DFB61FC914270033772E /* ChatBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFB51FC914270033772E /* ChatBaseCell.swift */; };
+		7D96DFB81FC9406A0033772E /* ChatCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFB71FC9406A0033772E /* ChatCellText.swift */; };
+		7D96DFBA1FC940750033772E /* ChatCellTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFB91FC940750033772E /* ChatCellTime.swift */; };
+		7D96DFBC1FC940A60033772E /* ChatCellVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFBB1FC940A60033772E /* ChatCellVoice.swift */; };
+		7D96DFBE1FC940B60033772E /* ChatCellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFBD1FC940B60033772E /* ChatCellImage.swift */; };
+		7D96DFC01FC940E70033772E /* ChatCellVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFBF1FC940E70033772E /* ChatCellVideo.swift */; };
+		7D96DFC21FC953900033772E /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFC11FC953900033772E /* ChatMessage.swift */; };
+		7D9954421FC5154D0066A64F /* Emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D9954411FC5154D0066A64F /* Emoji.plist */; };
 		7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */; };
 		7DA70D221F9093E9001CEE27 /* LPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D211F9093E9001CEE27 /* LPBaseViewController.swift */; };
 		7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */; };
+		7DAEB58E1FC6BB7000D43B46 /* Addbar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DAEB58D1FC6BB7000D43B46 /* Addbar.plist */; };
+		7DAEB5901FC6C7BD00D43B46 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAEB58F1FC6C7BD00D43B46 /* ChatManager.swift */; };
 		7DB86DAF1F999ED500402BA9 /* GenalNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DAE1F999ED500402BA9 /* GenalNotes.swift */; };
 		7DB86DB11F99A5AD00402BA9 /* LPFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */; };
 		7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */; };
@@ -69,8 +80,6 @@
 		7DF434851F90BFB2006D5698 /* XibNormalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF434841F90BFB2006D5698 /* XibNormalView.xib */; };
 		7DF66B521FB585B400A7CC05 /* LPChatKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF66B511FB585B400A7CC05 /* LPChatKeyboard.swift */; };
 		7DF66B541FB59BAF00A7CC05 /* KeyboardBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF66B531FB59BAF00A7CC05 /* KeyboardBtn.swift */; };
-		7DFC9A171FA31BCB009FF4B0 /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DFC9A151FA31BCB009FF4B0 /* Expression.bundle */; };
-		7DFC9A181FA31BCB009FF4B0 /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DFC9A161FA31BCB009FF4B0 /* Expression.plist */; };
 		7DFC9A1A1FA31C07009FF4B0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC9A191FA31C07009FF4B0 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,14 +104,13 @@
 		7D085CD81F8F6425006CA52C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		7D085CDA1F8F7589006CA52C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7D085CDC1F8F7605006CA52C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		7D0FF4631FC2AD92008AE490 /* LPAddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPAddModel.swift; sourceTree = "<group>"; };
+		7D1114AA1FC3CA59001A6B53 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		7D179DAA1FA02AA0008F4B97 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		7D179DAC1FA02AAB008F4B97 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7D179DB01FA073EC008F4B97 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		7D24C01F1FA1CAFE00D81359 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7D24C0201FA1CB0B00D81359 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		7D33089D1FBE8B3700846249 /* UITextView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
-		7D33089E1FBE8B3700846249 /* UITextView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
-		7D57B9501FB04C1F00CF54E6 /* LPChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatViewController.swift; sourceTree = "<group>"; };
 		7D57C2561FA1BA78007D1DB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7D57C2571FA1BA9C007D1DB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7D57C2581FA1BAB0007D1DB5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -111,7 +119,6 @@
 		7D57C25D1FA1BB10007D1DB5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7D57C25E1FA1BB1B007D1DB5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7D57C25F1FA1BB21007D1DB5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		7D5A9B441FAB18A600A70DB0 /* LPKeyboardMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPKeyboardMoreView.swift; sourceTree = "<group>"; };
 		7D5C2D071FA082F2008C1F75 /* LPPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPPlayerController.swift; sourceTree = "<group>"; };
 		7D5C2D081FA082F2008C1F75 /* LPPlayerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPPlayerController.xib; sourceTree = "<group>"; };
 		7D5C2D0B1FA08437008C1F75 /* LiveListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListCell.swift; sourceTree = "<group>"; };
@@ -124,19 +131,31 @@
 		7D6085AD1FAC1608001E954D /* DownloadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadCell.xib; sourceTree = "<group>"; };
 		7D6085B01FAC6174001E954D /* SVProgressHUDTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUDTool.swift; sourceTree = "<group>"; };
 		7D6313FF1FA09A8E00084BB2 /* LivelistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivelistModel.swift; sourceTree = "<group>"; };
-		7D6B127D1FA854D400E33B82 /* LPEmotionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPEmotionHelper.swift; sourceTree = "<group>"; };
 		7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAttachment.swift; sourceTree = "<group>"; };
 		7D6B12811FA8680800E33B82 /* UITextView+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extenstion.swift"; sourceTree = "<group>"; };
-		7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPEmotionView.swift; sourceTree = "<group>"; };
 		7D70A5FD1FA716B900BA18E9 /* IMCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCommon.swift; sourceTree = "<group>"; };
 		7D70A6041FA71F3A00BA18E9 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		7D70A6061FA7209300BA18E9 /* IMSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMSDKManager.swift; sourceTree = "<group>"; };
 		7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatBarView.swift; sourceTree = "<group>"; };
 		7D70A60C1FA7268900BA18E9 /* LPEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPEmotion.swift; sourceTree = "<group>"; };
+		7D779D281FC51D4E006A59D7 /* CustomEmoj.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomEmoj.plist; sourceTree = "<group>"; };
+		7D779D2B1FC58843006A59D7 /* ChatBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBarHelper.swift; sourceTree = "<group>"; };
 		7D8298E91FA3345A00FDA8D9 /* SwiftDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDateHelper.swift; sourceTree = "<group>"; };
+		7D96DFAB1FC90AF30033772E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		7D96DFAF1FC90CF10033772E /* ChatVC+Deleagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC+Deleagate.swift"; sourceTree = "<group>"; };
+		7D96DFB51FC914270033772E /* ChatBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBaseCell.swift; sourceTree = "<group>"; };
+		7D96DFB71FC9406A0033772E /* ChatCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellText.swift; sourceTree = "<group>"; };
+		7D96DFB91FC940750033772E /* ChatCellTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellTime.swift; sourceTree = "<group>"; };
+		7D96DFBB1FC940A60033772E /* ChatCellVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellVoice.swift; sourceTree = "<group>"; };
+		7D96DFBD1FC940B60033772E /* ChatCellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellImage.swift; sourceTree = "<group>"; };
+		7D96DFBF1FC940E70033772E /* ChatCellVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellVideo.swift; sourceTree = "<group>"; };
+		7D96DFC11FC953900033772E /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		7D9954411FC5154D0066A64F /* Emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Emoji.plist; sourceTree = "<group>"; };
 		7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPVerticalBtn.swift; sourceTree = "<group>"; };
 		7DA70D211F9093E9001CEE27 /* LPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPBaseViewController.swift; sourceTree = "<group>"; };
 		7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPPhotoHelper.swift; sourceTree = "<group>"; };
+		7DAEB58D1FC6BB7000D43B46 /* Addbar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Addbar.plist; sourceTree = "<group>"; };
+		7DAEB58F1FC6C7BD00D43B46 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		7DB86DAE1F999ED500402BA9 /* GenalNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenalNotes.swift; sourceTree = "<group>"; };
 		7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPFileManager.swift; sourceTree = "<group>"; };
 		7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPDownloadView.swift; sourceTree = "<group>"; };
@@ -154,8 +173,6 @@
 		7DF434841F90BFB2006D5698 /* XibNormalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibNormalView.xib; sourceTree = "<group>"; };
 		7DF66B511FB585B400A7CC05 /* LPChatKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPChatKeyboard.swift; sourceTree = "<group>"; };
 		7DF66B531FB59BAF00A7CC05 /* KeyboardBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBtn.swift; sourceTree = "<group>"; };
-		7DFC9A151FA31BCB009FF4B0 /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
-		7DFC9A161FA31BCB009FF4B0 /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
 		7DFC9A191FA31C07009FF4B0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,6 +295,7 @@
 				7DA70D1F1F9090E5001CEE27 /* LPVerticalBtn.swift */,
 				7D179DB01FA073EC008F4B97 /* Date+Extension.swift */,
 				7DFC9A191FA31C07009FF4B0 /* UIView+Extension.swift */,
+				7D1114AA1FC3CA59001A6B53 /* UITextField+Extension.swift */,
 			);
 			path = Extendion;
 			sourceTree = "<group>";
@@ -312,7 +330,7 @@
 		7D57B94D1FB04B5F00CF54E6 /* MainSection主要界面 */ = {
 			isa = PBXGroup;
 			children = (
-				7D57B94F1FB04BDD00CF54E6 /* ChatUI聊天页面 */,
+				7D57B94F1FB04BDD00CF54E6 /* 会话窗口 */,
 			);
 			path = "MainSection主要界面";
 			sourceTree = "<group>";
@@ -320,17 +338,17 @@
 		7D57B94E1FB04BC000CF54E6 /* 工具Tools */ = {
 			isa = PBXGroup;
 			children = (
+				7DAC783A1FC7A7A900DD5817 /* 聊天页面 */,
 				7D70A5FF1FA716EB00BA18E9 /* KeyboardTool */,
 			);
 			path = "工具Tools";
 			sourceTree = "<group>";
 		};
-		7D57B94F1FB04BDD00CF54E6 /* ChatUI聊天页面 */ = {
+		7D57B94F1FB04BDD00CF54E6 /* 会话窗口 */ = {
 			isa = PBXGroup;
 			children = (
-				7D57B9501FB04C1F00CF54E6 /* LPChatViewController.swift */,
 			);
-			path = "ChatUI聊天页面";
+			path = "会话窗口";
 			sourceTree = "<group>";
 		};
 		7D6085A71FAC13D0001E954D /* 下载页面 */ = {
@@ -361,29 +379,43 @@
 				7DF66B511FB585B400A7CC05 /* LPChatKeyboard.swift */,
 				7D07FFD31FB6D71600BF16AD /* LPChatKeyboradDelegate.swift */,
 				7D70A6081FA7211700BA18E9 /* LPChatBarView.swift */,
-				7D5A9B441FAB18A600A70DB0 /* LPKeyboardMoreView.swift */,
 				7DF66B531FB59BAF00A7CC05 /* KeyboardBtn.swift */,
 				7DDA44681FB6D2930041EF5A /* ChatRecordHUD.swift */,
-				7D70A60A1FA7264D00BA18E9 /* EmojView */,
+				7D779D2B1FC58843006A59D7 /* ChatBarHelper.swift */,
+				7D70A60A1FA7264D00BA18E9 /* EmojMoreView */,
 			);
 			path = KeyboardTool;
 			sourceTree = "<group>";
 		};
-		7D70A60A1FA7264D00BA18E9 /* EmojView */ = {
+		7D70A60A1FA7264D00BA18E9 /* EmojMoreView */ = {
 			isa = PBXGroup;
 			children = (
 				7D70A60C1FA7268900BA18E9 /* LPEmotion.swift */,
-				7D6B127D1FA854D400E33B82 /* LPEmotionHelper.swift */,
+				7D0FF4631FC2AD92008AE490 /* LPAddModel.swift */,
 				7D6B127F1FA862A300E33B82 /* EmotionAttachment.swift */,
 				7D6B12811FA8680800E33B82 /* UITextView+Extenstion.swift */,
-				7D6B12831FA86DB100E33B82 /* LPEmotionView.swift */,
-				7D33089D1FBE8B3700846249 /* UITextView+Extension.h */,
-				7D33089E1FBE8B3700846249 /* UITextView+Extension.m */,
 				7DD3E8561FBEE41400B2B3F2 /* KBCustomBaseView.swift */,
 				7DD3E8581FBEE6CD00B2B3F2 /* KBCustomEmojView.swift */,
 				7DD3E85A1FBEE70400B2B3F2 /* KBCustomAddView.swift */,
 			);
-			path = EmojView;
+			path = EmojMoreView;
+			sourceTree = "<group>";
+		};
+		7DAC783A1FC7A7A900DD5817 /* 聊天页面 */ = {
+			isa = PBXGroup;
+			children = (
+				7DAEB58F1FC6C7BD00D43B46 /* ChatManager.swift */,
+				7D96DFAB1FC90AF30033772E /* ChatViewController.swift */,
+				7D96DFAF1FC90CF10033772E /* ChatVC+Deleagate.swift */,
+				7D96DFB51FC914270033772E /* ChatBaseCell.swift */,
+				7D96DFB91FC940750033772E /* ChatCellTime.swift */,
+				7D96DFB71FC9406A0033772E /* ChatCellText.swift */,
+				7D96DFBB1FC940A60033772E /* ChatCellVoice.swift */,
+				7D96DFBD1FC940B60033772E /* ChatCellImage.swift */,
+				7D96DFBF1FC940E70033772E /* ChatCellVideo.swift */,
+				7D96DFC11FC953900033772E /* ChatMessage.swift */,
+			);
+			path = "聊天页面";
 			sourceTree = "<group>";
 		};
 		7DDFCE281FA96A76001463F2 /* YYKit + JsonEncoder */ = {
@@ -411,18 +443,19 @@
 		7DFC9A131FA31B9E009FF4B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7DFC9A141FA31BCB009FF4B0 /* Emotion */,
+				7DFC9A141FA31BCB009FF4B0 /* EmotionAdd */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7DFC9A141FA31BCB009FF4B0 /* Emotion */ = {
+		7DFC9A141FA31BCB009FF4B0 /* EmotionAdd */ = {
 			isa = PBXGroup;
 			children = (
-				7DFC9A151FA31BCB009FF4B0 /* Expression.bundle */,
-				7DFC9A161FA31BCB009FF4B0 /* Expression.plist */,
+				7D779D281FC51D4E006A59D7 /* CustomEmoj.plist */,
+				7D9954411FC5154D0066A64F /* Emoji.plist */,
+				7DAEB58D1FC6BB7000D43B46 /* Addbar.plist */,
 			);
-			path = Emotion;
+			path = EmotionAdd;
 			sourceTree = "<group>";
 		};
 		EB5A9DB143C789C088B1A324 /* Frameworks */ = {
@@ -508,18 +541,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DFC9A181FA31BCB009FF4B0 /* Expression.plist in Resources */,
 				7D085C8A1F8F48C7006CA52C /* LaunchScreen.storyboard in Resources */,
-				7DFC9A171FA31BCB009FF4B0 /* Expression.bundle in Resources */,
 				7D0818B11F9F40770084A140 /* LPLiveStreamController.xib in Resources */,
 				7DB86DB51F99EA3300402BA9 /* LPDownloadView.xib in Resources */,
 				7D6085AF1FAC1608001E954D /* DownloadCell.xib in Resources */,
 				7DF434851F90BFB2006D5698 /* XibNormalView.xib in Resources */,
 				7D5C2D0E1FA08437008C1F75 /* LiveListCell.xib in Resources */,
 				7D6085AB1FAC13F7001E954D /* DownloadController.xib in Resources */,
+				7DAEB58E1FC6BB7000D43B46 /* Addbar.plist in Resources */,
 				7D5C2D0A1FA082F2008C1F75 /* LPPlayerController.xib in Resources */,
+				7D9954421FC5154D0066A64F /* Emoji.plist in Resources */,
 				7D085C871F8F48C7006CA52C /* Assets.xcassets in Resources */,
 				7D085C851F8F48C7006CA52C /* Main.storyboard in Resources */,
+				7D779D2A1FC51D4E006A59D7 /* CustomEmoj.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,17 +634,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA70D221F9093E9001CEE27 /* LPBaseViewController.swift in Sources */,
-				7D6B127E1FA854D400E33B82 /* LPEmotionHelper.swift in Sources */,
 				7DD3E8591FBEE6CD00B2B3F2 /* KBCustomEmojView.swift in Sources */,
 				7D6B12801FA862A300E33B82 /* EmotionAttachment.swift in Sources */,
 				7D5C2D0D1FA08437008C1F75 /* LiveListCell.swift in Sources */,
 				7DA70D201F9090E5001CEE27 /* LPVerticalBtn.swift in Sources */,
 				7DDFCE2C1FA96CEB001463F2 /* ConvertModelData.swift in Sources */,
-				7D5A9B451FAB18A600A70DB0 /* LPKeyboardMoreView.swift in Sources */,
 				7DE2FBF01F988A0B0028506D /* RequestManager.swift in Sources */,
 				7D0818B01F9F40770084A140 /* LPLiveStreamController.swift in Sources */,
 				7D085CD21F8F61EB006CA52C /* Macros.swift in Sources */,
 				7DDA44691FB6D2930041EF5A /* ChatRecordHUD.swift in Sources */,
+				7D779D2C1FC58843006A59D7 /* ChatBarHelper.swift in Sources */,
 				7D07FFD41FB6D71600BF16AD /* LPChatKeyboradDelegate.swift in Sources */,
 				7D085CDD1F8F7605006CA52C /* String+Extension.swift in Sources */,
 				7DB86DB11F99A5AD00402BA9 /* LPFileManager.swift in Sources */,
@@ -618,19 +651,25 @@
 				7D085CD41F8F63E9006CA52C /* HttpRequest.swift in Sources */,
 				7D085C821F8F48C7006CA52C /* ViewController.swift in Sources */,
 				7D70A6051FA71F3A00BA18E9 /* AppDelegate+Extension.swift in Sources */,
-				7D33089F1FBE8B3700846249 /* UITextView+Extension.m in Sources */,
 				7D70A5FE1FA716B900BA18E9 /* IMCommon.swift in Sources */,
 				7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */,
 				7DD3E85B1FBEE70400B2B3F2 /* KBCustomAddView.swift in Sources */,
 				7D085CDB1F8F7589006CA52C /* UIColor+Extension.swift in Sources */,
 				7D085CD91F8F6425006CA52C /* SwiftyJSON.swift in Sources */,
-				7D6B12841FA86DB100E33B82 /* LPEmotionView.swift in Sources */,
 				7DB86DAF1F999ED500402BA9 /* GenalNotes.swift in Sources */,
+				7D96DFC01FC940E70033772E /* ChatCellVideo.swift in Sources */,
+				7D96DFB61FC914270033772E /* ChatBaseCell.swift in Sources */,
+				7D96DFBE1FC940B60033772E /* ChatCellImage.swift in Sources */,
 				7D6085B11FAC6174001E954D /* SVProgressHUDTool.swift in Sources */,
+				7DAEB5901FC6C7BD00D43B46 /* ChatManager.swift in Sources */,
+				7D0FF4641FC2AD92008AE490 /* LPAddModel.swift in Sources */,
 				7D085C801F8F48C7006CA52C /* AppDelegate.swift in Sources */,
+				7D96DFAC1FC90AF30033772E /* ChatViewController.swift in Sources */,
 				7D5C2D101FA0848E008C1F75 /* LPLiveListController.swift in Sources */,
 				7D5C2D121FA08DC4008C1F75 /* SnapkitDemo.swift in Sources */,
 				7D8298EA1FA3345A00FDA8D9 /* SwiftDateHelper.swift in Sources */,
+				7D1114AB1FC3CA59001A6B53 /* UITextField+Extension.swift in Sources */,
+				7D96DFB01FC90CF10033772E /* ChatVC+Deleagate.swift in Sources */,
 				7D6085AE1FAC1608001E954D /* DownloadCell.swift in Sources */,
 				7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */,
 				7DF434811F90BF83006D5698 /* XibNormalView.swift in Sources */,
@@ -642,13 +681,16 @@
 				7D179DB11FA073EC008F4B97 /* Date+Extension.swift in Sources */,
 				7D70A6071FA7209300BA18E9 /* IMSDKManager.swift in Sources */,
 				7DD534AE1FA9A43A00784C1A /* UseYYKit.swift in Sources */,
+				7D96DFBA1FC940750033772E /* ChatCellTime.swift in Sources */,
+				7D96DFC21FC953900033772E /* ChatMessage.swift in Sources */,
 				7D5C2D091FA082F2008C1F75 /* LPPlayerController.swift in Sources */,
 				7DFC9A1A1FA31C07009FF4B0 /* UIView+Extension.swift in Sources */,
-				7D57B9511FB04C1F00CF54E6 /* LPChatViewController.swift in Sources */,
 				7DF66B541FB59BAF00A7CC05 /* KeyboardBtn.swift in Sources */,
 				7DE2FBF21F988A410028506D /* DownloadManager.swift in Sources */,
 				7D6085AA1FAC13F7001E954D /* DownloadController.swift in Sources */,
+				7D96DFB81FC9406A0033772E /* ChatCellText.swift in Sources */,
 				7DD3E8571FBEE41400B2B3F2 /* KBCustomBaseView.swift in Sources */,
+				7D96DFBC1FC940A60033772E /* ChatCellVoice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,7 +747,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "";

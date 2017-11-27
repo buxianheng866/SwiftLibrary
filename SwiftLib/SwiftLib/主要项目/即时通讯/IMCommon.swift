@@ -30,8 +30,14 @@ let keyboardDuration = 0.25 // 键盘显示隐藏的动画时间
 
 
 
-//---------通知、存储类-----------
-let U_keyboradType = "U_keyboradType"
+//---------通知类-----------
+
+
+
+//---------UserDefalut类-----------
+let U_UserAccount = "UserIMAccount"
+let U_UserPassWord = "UserIMPassWord"
+
 
 
 

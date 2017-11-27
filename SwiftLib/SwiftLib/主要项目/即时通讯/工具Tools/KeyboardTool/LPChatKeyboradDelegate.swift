@@ -10,5 +10,9 @@ import Foundation
 
 protocol LPChatKeyboradDelegate: NSObjectProtocol {
     
-    func sendMessage(messg: String) //发送消息
+    /** 发送消息*/
+    func sendMessage(messg: String)
+    
+    /** 滚到底部*/
+    func aboveViewScrollToBottom()
 }

@@ -26,18 +26,24 @@ class ViewController: UIViewController {
         }
     }
     
+
+    @IBOutlet weak var btn: KeyboardBtn!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let ks = KBCustomAddView(frame: CGRect(x: 0, y: 150, width: mScreenW, height: 300))
-        self.view.addSubview(ks)
+        
+    
+            self.btn.setTitle("haha", for: .normal)
+         self.btn.setImage(UIImage(named: "[抱抱]"), for: .selected)
+       
+        
         
         
     }
     
     @IBAction func selectedAct(_ sender: Any) {
-        let chat = LPChatViewController()
+            
+        let chat = ChatViewController()
         self.navigationController?.pushViewController(chat, animated: true)
     }
     

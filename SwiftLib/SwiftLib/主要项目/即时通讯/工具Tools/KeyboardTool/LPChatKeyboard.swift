@@ -12,7 +12,6 @@ import UIKit
 class LPChatKeyboard: UIView {
     
     weak var controller: UIViewController!
-    weak var aboveView: UIView!
     weak var keyboardDelegate: LPChatKeyboradDelegate?
 
     lazy var chatBar: LPChatBarView = {
@@ -21,13 +20,13 @@ class LPChatKeyboard: UIView {
         return bar
     }()
     
-    lazy var moreView: LPKeyboardMoreView = {
-        let more = LPKeyboardMoreView()
+    lazy var moreView: KBCustomAddView = {
+        let more = KBCustomAddView()
         return more
     }()
     
-    lazy var emojView: LPEmotionView = {
-        let emoj = LPEmotionView()
+    lazy var emojView: KBCustomEmojView = {
+        let emoj = KBCustomEmojView()
         return emoj
     }()
     
@@ -63,12 +62,13 @@ class LPChatKeyboard: UIView {
         emojView.selectEmotionBlock = {
            [weak self] model in
             if model.isRemove {
-                let _ = self?.chatBar.inputTextView.onTextDeleteisEmo(true, block: {
+                let _ = self?.chatBar.inputTextView.deleteText(isEmo: true, change: {
                     self?.chatBar.textViewDidChange((self?.chatBar.inputTextView)!)
                 })
-                
             } else {
-               self?.chatBar.inputTextView.insertText(model.text!)
+                let str = model.code.isEmpty ? model.face_name : model.code
+                
+                self?.chatBar.inputTextView.insertText(str)
             }
         }
         
@@ -87,6 +87,7 @@ class LPChatKeyboard: UIView {
         return super.resignFirstResponder()
     }
 }
+
 
 extension LPChatKeyboard {
     
@@ -126,7 +127,7 @@ extension LPChatKeyboard {
             UIView.animate(withDuration: duration) {
                 self.controller.view.layoutIfNeeded()
             }
-             (self.controller as! LPChatViewController).scrollToBottom()
+            keyboardDelegate?.aboveViewScrollToBottom()
         }
     }
     
@@ -149,6 +150,7 @@ extension LPChatKeyboard {
         UIView.animate(withDuration: 0.1, animations: {
             self.controller.view.layoutIfNeeded()
         }) { (flag) in
+            self.keyboardDelegate?.aboveViewScrollToBottom()
             other.snp.updateConstraints({ (make) in
                 make.bottom.equalTo(self.snp.bottom).offset(-(kCustomKeyboardViewHeight + kSafeAreaInset.bottom))
             })

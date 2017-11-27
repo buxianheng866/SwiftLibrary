@@ -16,8 +16,8 @@ class LPLiveListController: LPBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
-        loadData()
+//        setUI()
+//        loadData(s)
         
     
     }

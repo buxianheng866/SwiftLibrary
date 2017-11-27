@@ -296,17 +296,17 @@ extension LPChatBarView {
 extension LPChatBarView: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
-            let mesg = textView.getEmotionString()
-            if !mesg.isEmpty {
+            if !textView.text.isEmpty {
                 chatBarDelegate?.chatBarSendMessage()
             }
             return false
         } else if text == "" && range.length == 1 {
             
-            let _ = textView.onTextDeleteisEmo(false, block: {
-                
-            })
+//            let _ = textView.onTextDeleteisEmo(false, block: {
+//
+//            })
             
+            return textView.deleteText(isEmo: false, change: nil)
         }
         return true
     }
