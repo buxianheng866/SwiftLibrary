@@ -15,9 +15,13 @@ enum ChatCellType: String {
     case voice = "IMVoiceCell"
     case image = "IMImageCell"
     case video = "IMVideoCell"
+    case location = "IMLocation"
 }
 
 class ChatManager {
-    let `default` = ChatManager()
+    static let `default` = ChatManager()
+    
+    
+    
     
 }

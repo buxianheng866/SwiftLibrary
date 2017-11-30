@@ -53,7 +53,7 @@
 		7D96DFB61FC914270033772E /* ChatBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFB51FC914270033772E /* ChatBaseCell.swift */; };
 		7D96DFB81FC9406A0033772E /* ChatCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFB71FC9406A0033772E /* ChatCellText.swift */; };
 		7D96DFBA1FC940750033772E /* ChatCellTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFB91FC940750033772E /* ChatCellTime.swift */; };
-		7D96DFBC1FC940A60033772E /* ChatCellVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFBB1FC940A60033772E /* ChatCellVoice.swift */; };
+		7D96DFBC1FC940A60033772E /* ChatCellAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFBB1FC940A60033772E /* ChatCellAudio.swift */; };
 		7D96DFBE1FC940B60033772E /* ChatCellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFBD1FC940B60033772E /* ChatCellImage.swift */; };
 		7D96DFC01FC940E70033772E /* ChatCellVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFBF1FC940E70033772E /* ChatCellVideo.swift */; };
 		7D96DFC21FC953900033772E /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96DFC11FC953900033772E /* ChatMessage.swift */; };
@@ -63,6 +63,7 @@
 		7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */; };
 		7DAEB58E1FC6BB7000D43B46 /* Addbar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DAEB58D1FC6BB7000D43B46 /* Addbar.plist */; };
 		7DAEB5901FC6C7BD00D43B46 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAEB58F1FC6C7BD00D43B46 /* ChatManager.swift */; };
+		7DB1B46B1FCC026F00124408 /* CM+FormattMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB1B46A1FCC026F00124408 /* CM+FormattMessage.swift */; };
 		7DB86DAF1F999ED500402BA9 /* GenalNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DAE1F999ED500402BA9 /* GenalNotes.swift */; };
 		7DB86DB11F99A5AD00402BA9 /* LPFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */; };
 		7DB86DB31F99EA2A00402BA9 /* LPDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */; };
@@ -146,7 +147,7 @@
 		7D96DFB51FC914270033772E /* ChatBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBaseCell.swift; sourceTree = "<group>"; };
 		7D96DFB71FC9406A0033772E /* ChatCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellText.swift; sourceTree = "<group>"; };
 		7D96DFB91FC940750033772E /* ChatCellTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellTime.swift; sourceTree = "<group>"; };
-		7D96DFBB1FC940A60033772E /* ChatCellVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellVoice.swift; sourceTree = "<group>"; };
+		7D96DFBB1FC940A60033772E /* ChatCellAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellAudio.swift; sourceTree = "<group>"; };
 		7D96DFBD1FC940B60033772E /* ChatCellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellImage.swift; sourceTree = "<group>"; };
 		7D96DFBF1FC940E70033772E /* ChatCellVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellVideo.swift; sourceTree = "<group>"; };
 		7D96DFC11FC953900033772E /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 		7DA70D231F90996B001CEE27 /* LPPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPPhotoHelper.swift; sourceTree = "<group>"; };
 		7DAEB58D1FC6BB7000D43B46 /* Addbar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Addbar.plist; sourceTree = "<group>"; };
 		7DAEB58F1FC6C7BD00D43B46 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		7DB1B46A1FCC026F00124408 /* CM+FormattMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CM+FormattMessage.swift"; sourceTree = "<group>"; };
 		7DB86DAE1F999ED500402BA9 /* GenalNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenalNotes.swift; sourceTree = "<group>"; };
 		7DB86DB01F99A5AD00402BA9 /* LPFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPFileManager.swift; sourceTree = "<group>"; };
 		7DB86DB21F99EA2A00402BA9 /* LPDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPDownloadView.swift; sourceTree = "<group>"; };
@@ -405,12 +407,13 @@
 			isa = PBXGroup;
 			children = (
 				7DAEB58F1FC6C7BD00D43B46 /* ChatManager.swift */,
+				7DB1B46A1FCC026F00124408 /* CM+FormattMessage.swift */,
 				7D96DFAB1FC90AF30033772E /* ChatViewController.swift */,
 				7D96DFAF1FC90CF10033772E /* ChatVC+Deleagate.swift */,
 				7D96DFB51FC914270033772E /* ChatBaseCell.swift */,
 				7D96DFB91FC940750033772E /* ChatCellTime.swift */,
 				7D96DFB71FC9406A0033772E /* ChatCellText.swift */,
-				7D96DFBB1FC940A60033772E /* ChatCellVoice.swift */,
+				7D96DFBB1FC940A60033772E /* ChatCellAudio.swift */,
 				7D96DFBD1FC940B60033772E /* ChatCellImage.swift */,
 				7D96DFBF1FC940E70033772E /* ChatCellVideo.swift */,
 				7D96DFC11FC953900033772E /* ChatMessage.swift */,
@@ -654,6 +657,7 @@
 				7D70A5FE1FA716B900BA18E9 /* IMCommon.swift in Sources */,
 				7DA70D241F90996B001CEE27 /* LPPhotoHelper.swift in Sources */,
 				7DD3E85B1FBEE70400B2B3F2 /* KBCustomAddView.swift in Sources */,
+				7DB1B46B1FCC026F00124408 /* CM+FormattMessage.swift in Sources */,
 				7D085CDB1F8F7589006CA52C /* UIColor+Extension.swift in Sources */,
 				7D085CD91F8F6425006CA52C /* SwiftyJSON.swift in Sources */,
 				7DB86DAF1F999ED500402BA9 /* GenalNotes.swift in Sources */,
@@ -690,7 +694,7 @@
 				7D6085AA1FAC13F7001E954D /* DownloadController.swift in Sources */,
 				7D96DFB81FC9406A0033772E /* ChatCellText.swift in Sources */,
 				7DD3E8571FBEE41400B2B3F2 /* KBCustomBaseView.swift in Sources */,
-				7D96DFBC1FC940A60033772E /* ChatCellVoice.swift in Sources */,
+				7D96DFBC1FC940A60033772E /* ChatCellAudio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

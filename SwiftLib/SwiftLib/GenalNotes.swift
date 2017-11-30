@@ -9,7 +9,11 @@
 /*
 有默认 default字样
  static let `default` = DownloadManager()
+ 
  superView.subviews.contains(self)
  
  
+ private(set) var name = "hahahahah" //外界只读 内部可写
+ 
+
  */

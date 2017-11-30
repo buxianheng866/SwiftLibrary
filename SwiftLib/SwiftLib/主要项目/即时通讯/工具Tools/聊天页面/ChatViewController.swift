@@ -49,7 +49,6 @@ class ChatViewController: UIViewController {
         key.controller = self
         return key
     }()
-    
 }
 
 extension ChatViewController {

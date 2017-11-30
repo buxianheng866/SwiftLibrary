@@ -16,7 +16,9 @@ class ChatBaseCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setUI()
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -24,13 +26,7 @@ class ChatBaseCell: UICollectionViewCell {
     lazy var headerImage: UIImageView = {
         return UIImageView()
     }()
-    /** 用户名*/
-    lazy var userName: UILabel = {
-        let lab = UILabel()
-        lab.font = UIFont.systemFont(ofSize: 16)
-        lab.textColor = UIColor.black
-        return lab
-    }()
+    
     /** 气泡*/
     var bubbleImage: UIImageView = {
         return UIImageView()
@@ -51,8 +47,41 @@ class ChatBaseCell: UICollectionViewCell {
     var message: ChatMessage? {
         didSet {
             guard let md = message else { return }
-            
+            headerImage.frame = md.frame.headerF!
+            bubbleImage.frame = md.frame.bubbleF!
+            if md.isSender == true {
+                activity.frame = md.frame.acivityF!
+                retrybtn.frame = md.frame.retryF!
+                self.bubbleImage.image = #imageLiteral(resourceName: "message_sender_background_normal")
+                if let state = message?.msgSate {
+                    switch state {
+                    case .deliveried:
+                        retrybtn.isHidden = true
+                        activity.isHidden = true
+                        activity.stopAnimating()
+                    case .delivering:
+                        retrybtn.isHidden = true
+                        activity.isHidden = false
+                        activity.startAnimating()
+                    case .failed:
+                        retrybtn.isHidden = false
+                        activity.isHidden = true
+                        activity.stopAnimating()
+                    }
+                }
+                headerImage.backgroundColor = UIColor.orange
+            } else {
+                self.bubbleImage.image = #imageLiteral(resourceName: "message_receiver_background_normal")
+                headerImage.backgroundColor = UIColor.green
+            }
         }
+    }
+    
+    func setUI() {
+        contentView.addSubview(headerImage)
+        contentView.addSubview(bubbleImage)
+        contentView.addSubview(activity)
+        contentView.addSubview(retrybtn)
     }
     
 }
