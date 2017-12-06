@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         HUDView.initstyle()
+        IMManager.IMint()
+        NIMSDK.shared().enableConsoleLog()
+        IMManager.default.autoLog()
         return true
     }
 

@@ -44,11 +44,11 @@ let kSafeAreaInset = UIApplication.shared.delegate?.window??.safeAreaInsets ?? U
 
 let isPhoneX = UIScreen.main.currentMode?.size.height == 2436
 
-let TopBarHeight = isPhoneX ? 88 : 64
+let TopBarHeight: CGFloat = isPhoneX ? 88 : 64
 
-let BottomBarHeight = isPhoneX ? 83 : 49 //底部有tabbar高度
+let BottomBarHeight: CGFloat = isPhoneX ? 83 : 49 //底部有tabbar高度
 
-let StatusBarHeight = isPhoneX ? 44 : 20 //状态栏高度
+let StatusBarHeight: CGFloat = isPhoneX ? 44 : 20 //状态栏高度
 
 let kApplication = UIApplication.shared
 

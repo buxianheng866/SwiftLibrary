@@ -27,24 +27,28 @@ class ViewController: UIViewController {
     }
     
 
-    @IBOutlet weak var btn: KeyboardBtn!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
     
-            self.btn.setTitle("haha", for: .normal)
-         self.btn.setImage(UIImage(named: "[抱抱]"), for: .selected)
-       
+    
+    @IBAction func gotoChat(_ sender: Any) {
         
-        
-        
+        let islog = IMManager.default.isLogined()
+        if islog == true {
+            let conver = ConversationController()
+            self.navigationController?.pushViewController(conver, animated: true)
+        } else {
+            let log = LogInViewController()
+            self.navigationController?.pushViewController(log, animated: true)
+        }
     }
     
     @IBAction func selectedAct(_ sender: Any) {
             
-        let chat = ChatViewController()
-        self.navigationController?.pushViewController(chat, animated: true)
+     
     }
     
     @IBAction func godownload(_ sender: Any) {

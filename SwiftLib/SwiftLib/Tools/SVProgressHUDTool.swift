@@ -8,12 +8,17 @@
 
 import Foundation
 import SVProgressHUD
+
+
 class HUDView: SVProgressHUD {
     class func initstyle() -> Void {
         self.setBackgroundColor(RGBA(r: 0.0, g: 0.0, b: 0.0, a: 0.7))
         self.setForegroundColor(UIColor.white)
         self.setFont(UIFont.systemFont(ofSize: 14))
         self.setDefaultMaskType(.none)
+        self.setMinimumDismissTimeInterval(3.0)
     }
+    
+    
 }
 

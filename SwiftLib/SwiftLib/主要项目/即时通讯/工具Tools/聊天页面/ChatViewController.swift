@@ -9,6 +9,17 @@
 import Foundation
 
 class ChatViewController: UIViewController {
+    
+    init(session: NIMSession) {
+        super.init(nibName: nil, bundle: nil)
+        self.navigationItem.title = session.sessionId
+    
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
@@ -70,7 +81,8 @@ extension ChatViewController {
     }
     
     open func scrollToBottom(animated: Bool = false) -> Void {
-        let index = IndexPath(item: 19, section: 0)
+        guard let data = ChatMsgManager.default.messageSource else { return }
+        let index = IndexPath(item: data.count - 1, section: 0)
         self.collectView.scrollToItem(at: index, at: .top, animated: animated)
     }
 }

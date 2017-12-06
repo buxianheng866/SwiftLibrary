@@ -216,7 +216,7 @@ typedef void(^NIMAudioToTextBlock)(NSError * __nullable error,NSString * __nulla
  *
  *  @param type     音频类型
  *  @param duration 最大时长
- *  @discussion 开始录音，NIMMediaManagerDelegate中的recordAudio:didBeganWithError:回调会被触发，录音完成后, NIMMediaManagerDelegate中的recordAudio:didCompletedWithError:回调会被触发
+ *  @discussion 开始录音，NIMMediaManagerDelegate中的recordAudio:didBeganWithError:回调会被触发，录音完成后, NIMMediaManagerDelegate中的recordAudio:didCompletedWithError:回调会d被触发
  */
 - (void)record:(NIMAudioType)type
       duration:(NSTimeInterval)duration;

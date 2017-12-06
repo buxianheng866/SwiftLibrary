@@ -8,6 +8,12 @@
 
 import Foundation
 
+let kImgMaxW: CGFloat = 125 //最大图片宽度
+let kImgMinW: CGFloat = 50  //最小图片宽度
+let kImgMaxH: CGFloat = 150 //最大的图片宽度
+let kImgMinH: CGFloat = 50  //最小图片宽度
+
+
 class ChatMessage {
     
     var message: NIMMessage! {
@@ -21,7 +27,7 @@ class ChatMessage {
                 if let tp = imgObj.thumbPath {
                     locthumbImg = UIImage(contentsOfFile: tp)
                 }
-                thumbSize = ChatManager.default.cutThumbImgSize(imgObj.size)
+                thumbSize = cutThumbImgSize(imgObj.size)
                 orgImgSize = imgObj.size
             case .audio:
                 let aduObj = message.messageObject as! NIMAudioObject
@@ -34,7 +40,7 @@ class ChatMessage {
                 orgVideoUrl = videoObj.url
                 videoImgLocUrl = videoObj.coverPath
                 videoImgOrgUrl = videoObj.coverUrl
-                videoImgSize = ChatManager.default.cutThumbImgSize(videoObj.coverSize)
+                videoImgSize = cutThumbImgSize(videoObj.coverSize)
                 videoDuration = videoObj.duration / 1000
             default: break
             }
@@ -107,7 +113,7 @@ class ChatMessage {
 
 class MessageFrame: NSObject {
     /** cell高度*/
-    var cellHeight: CGFloat?
+    var cellHeight: CGFloat = 0
     /** 头像*/
     var headerF: CGRect?
     /** 姓名*/
@@ -169,10 +175,9 @@ class MessageFrame: NSObject {
                 imageF = CGRect(x: (bubbleF?.origin.x)! + imageMar, y: cellMar + topMar + imageMar, width: (msg.thumbSize?.width)!, height: (msg.thumbSize?.height)!)
                 
             case .audio:
-                let len = ChatManager.default.formatAudioTime(duration: msg.audioDuration)
-                bubbleF = CGRect(x: headX - headToBub - len - arrowW, y: cellMar + topMar, width: len + arrowW + 2, height: 40)
-                voiceF = CGRect(x: (bubbleF?.origin.x)!, y: (bubbleF?.origin.y)!, width: (bubbleF?.size.width)! - arrowW, height: 40)
-                voiceTimeF = CGRect(x: (bubbleF?.origin.x)! - 40 - 5, y: (bubbleF?.origin.y)!, width: 40, height: 40)
+                let len = formatAudioTime(duration: msg.audioDuration)
+                voiceF = CGRect(x: headX - headToBub - len, y: cellMar + topMar, width: len, height: 50)
+                voiceTimeF = CGRect(x: (voiceF?.origin.x)! - 40 - 5, y: (voiceF?.origin.y)!, width: 40, height: 40)
                 
             case .video:
                 let bubbleX = headX - headToBub - (msg.videoImgSize?.width)! - imageMar * 2
@@ -207,16 +212,15 @@ class MessageFrame: NSObject {
                 imageF = CGRect(x: (bubbleF?.origin.x)! + imageMar, y: cellMar + topMar + imageMar, width: (msg.thumbSize?.width)!, height: (msg.thumbSize?.height)!)
             case .audio:
                 
-                let len = ChatManager.default.formatAudioTime(duration: msg.audioDuration)
-                bubbleF = CGRect(x: headMaxX, y: cellMar + topMar - 3, width: len + arrowW + 2, height: 40)
-                voiceF = CGRect(x: (bubbleF?.origin.x)!, y: (bubbleF?.origin.y)!, width: (bubbleF?.size.width)! - arrowW, height: 40)
-                voiceTimeF = CGRect(x: (bubbleF?.origin.x)! + (bubbleF?.size.width)! + 5, y: (bubbleF?.origin.y)!, width: 40, height: 40)
+                let len = formatAudioTime(duration: msg.audioDuration)
+                voiceF = CGRect(x: headMaxX, y: cellMar + topMar, width: len, height: 50)
+                voiceTimeF = CGRect(x: (voiceF?.origin.x)! + len + 5, y: (voiceF?.origin.y)!, width: 40, height: 40)
             case .video:
                 
                 bubbleF = CGRect(x: headMaxX, y: cellMar + topMar, width: (msg.videoImgSize?.width)! + imageMar * 2, height: (msg.videoImgSize?.height)! + imageMar * 2)
                 imageF = CGRect(x: (bubbleF?.origin.x)! + imageMar, y: cellMar + topMar + imageMar, width: (msg.videoImgSize?.width)!, height: (msg.videoImgSize?.height)!)
                 videoPlayF = CGRect(x: (imageF?.size.width)! / 2 - 20, y: (imageF?.size.height)! / 2 - 20, width: 40, height: 40)
-            //                videoDuration
+
             default:
                 printLog("other")
             }
@@ -231,6 +235,33 @@ class MessageFrame: NSObject {
         }
     }
     
+}
+
+/** 裁剪聊天缩略图*/
+func cutThumbImgSize(_ orgSize: CGSize) -> CGSize {
+    var newW: CGFloat = 0
+    var newH: CGFloat = 0
+    if orgSize.height >= orgSize.height {
+        let scalW = orgSize.width * kImgMaxH / orgSize.height
+        newW = scalW > kImgMinW ? scalW : kImgMinW
+        newH = kImgMaxH
+    } else {
+        let sclH = orgSize.height * kImgMaxW / orgSize.width
+        newH = sclH > kImgMinH ? sclH : kImgMinH
+        newW = kImgMaxW
+    }
+    return CGSize(width: newW, height: newH)
+}
+
+/** 长度from音频时长*/
+func formatAudioTime(duration: Int) -> CGFloat {
+    if duration <= 20 {
+        return 80
+    } else if duration > 20 && duration < 40 {
+        return 120
+    } else {
+        return 160
+    }
 }
 
 

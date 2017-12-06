@@ -66,15 +66,19 @@
                                     <action selector="godownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIa-Sy-7pP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygO-4G-ViJ" customClass="KeyboardBtn" customModule="SwiftLib" customModuleProvider="target">
-                                <rect key="frame" x="34" y="248" width="81" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyN-KT-tSp">
+                                <rect key="frame" x="20" y="84" width="74" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.58242187499999998" blue="0.45295758930000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="qGR-nY-bog"/>
-                                    <constraint firstAttribute="width" constant="81" id="syt-QK-OB5"/>
+                                    <constraint firstAttribute="height" constant="34" id="5oj-HU-ERg"/>
                                 </constraints>
-                                <state key="normal">
-                                    <color key="titleColor" red="1" green="0.58242187499999998" blue="0.45295758930000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="1"/>
+                                <state key="normal" title="我要聊天">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="gotoChat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdd-JK-hdV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -84,21 +88,19 @@
                             <constraint firstItem="zVk-Ef-xq8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X96-65-GSt" secondAttribute="trailing" constant="8" symbolic="YES" id="7HP-rK-bKW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wTs-iD-6OA" secondAttribute="bottom" constant="100" id="9aY-bc-rum"/>
                             <constraint firstAttribute="trailing" secondItem="zVk-Ef-xq8" secondAttribute="trailing" constant="103" id="GKf-bH-x0P"/>
+                            <constraint firstItem="VyN-KT-tSp" firstAttribute="top" secondItem="OZz-X7-syc" secondAttribute="bottom" constant="30" id="YSh-5g-HT7"/>
                             <constraint firstItem="zVk-Ef-xq8" firstAttribute="centerY" secondItem="X96-65-GSt" secondAttribute="centerY" id="YqG-7g-XcY"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X96-65-GSt" secondAttribute="trailing" constant="20" symbolic="YES" id="aAz-Xt-RMl"/>
                             <constraint firstItem="wTs-iD-6OA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="bTE-Ho-8QR"/>
-                            <constraint firstItem="ygO-4G-ViJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="ghE-WM-Kr2"/>
                             <constraint firstItem="X96-65-GSt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iyG-Bv-Xd3"/>
+                            <constraint firstItem="VyN-KT-tSp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l7A-P1-NQt"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wTs-iD-6OA" secondAttribute="trailing" constant="20" symbolic="YES" id="lyu-D9-mrp"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VyN-KT-tSp" secondAttribute="trailing" constant="20" symbolic="YES" id="nX6-jV-kuU"/>
                             <constraint firstItem="OZz-X7-syc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qLl-rK-avy"/>
-                            <constraint firstItem="ygO-4G-ViJ" firstAttribute="top" secondItem="OZz-X7-syc" secondAttribute="bottom" constant="194" id="tI6-M5-9qP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="dgq-nn-ZYY"/>
-                    <connections>
-                        <outlet property="btn" destination="ygO-4G-ViJ" id="czQ-bt-qCO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
